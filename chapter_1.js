@@ -49,7 +49,7 @@ Question_9: Calculate Average within 20, 25, 30, 91?
 
 Average: 41.50
 
-Question_10: Calculate the Area. Here 𝞹 value 3.14.  𝞹xr2? 
+Question_10: Calculate the Area. Here 𝞹 value 3.14 & r value 7.  𝞹xr2? 
 
 Ans: 153.86
 
