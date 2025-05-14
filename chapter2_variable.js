@@ -84,12 +84,12 @@ console.log(isDinnerDone)
 
 // Operators
 
-+ = Addition, 
-- = Subtraction
-* = Multipulation // Astric symbol
++  = Addition, 
+-  = Subtraction
+*  = Multipulation // Astric symbol
 ** = Exponentiation (ES6)
-/ = Division
-% = Modulus (Reminder)
+/  = Division
+%  = Modulus (Reminder)
 
 const earn = 100;
 const expenses = 40
