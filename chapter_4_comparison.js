@@ -80,13 +80,13 @@ const js = "javaScript";
 const js2 = 'javaScript';
 //console.log(js == js2)
 //console.log(js === js2)
-// // All Are true because value & datatype is same
+// All Are true because value & datatype is same
 
 const test = "test"
 const test2 = "TEST"
 // console.log(test == test2)
 // console.log(test === test2) 
-// // all are false because value is not same but datatype is same
+// all are false because value is not same but datatype is same
 
 const x = 15;
 const y = '20'
