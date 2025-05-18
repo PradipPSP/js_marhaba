@@ -31,14 +31,6 @@ const favGames = ["Free fire", "Pubji", "Candy Crush", "Tample Run"]
 favGames[2] = "Subway Sarfer"
 console.log(favGames)
 
-const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-digits[7] = 30;
-console.log(digits)
-
-const favGames = ["Free fire", "Pubji", "Candy Crush", "Tample Run"]
-favGames[2] = "Subway Sarfer"
-console.log(favGames)
-
 const myFamily = ["Suchitra", "Pratim", "Raju", "Radhika", "Sukumar", "Amari", "Nitai", "Kona"]
 console.log(myFamily[3])
 
@@ -103,3 +95,39 @@ if (friendsAll3.includes('kalam')){
 const friendsAll4 = ["balam", "kalam", "salam", "gelam", "pailam"];
 const index = friendsAll4.indexOf("khailam")
 console.log(index)
+
+const friendsAll5 = ["balam", "kalam", "salam", "gelam", "pailam"];
+const index2 = friendsAll5.indexOf("kalam")
+console.log(index2)
+
+// Practice
+
+const favFruits = ["Apple", "Banana", "Orange", "Mango", "Guava"]
+if(favFruits.includes("Mango")){
+    console.log(`Mango Aca`)
+} else {
+    console.log(`No Mango, Climb the Tree`)
+};
+
+const names = ["Babul", "Alif", "Chaton"]
+console.log(names.indexOf("Babul"))
+
+const listOfTenants = ["Rimon", "Rifat", "Rajib"]
+console.log(listOfTenants.indexOf("Rifat"))
+
+const cityNames = ["Khulna", "Dhaka", "Chittagong", "Rangpur", "Dinajpur"]
+cityNames.push("rajshahi")
+console.log(cityNames);
+console.log(cityNames.includes("RajShahi")) // false because js is case sensitive
+
+const girlsName = ["Dighi", "Megh", "Bristy", "Barsha"]
+if(girlsName.includes("Bristy")){
+    console.log("I need A Umbrella")
+} else{
+    console.log("No Rain No Pain")
+};
+
+const favPlay = ["Cricket", "Football", "Valiball"]
+// console.log(favPlay.includes("Badminton")); // false 
+favPlay.push("Badminton")
+console.log(favPlay)
