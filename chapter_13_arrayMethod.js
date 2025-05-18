@@ -48,4 +48,5 @@ console.log(firstLetter);
 // .forEach() Method প্রতিটি উপদানের উপর কাজ করে কিন্তু কিছু রিটার্ন (return) করে না। অন্যদিকে .map() প্রতিটি উপদানের উপর কাজ করে এবং কিছু রিটার্ন (return) করে। 
 
 const numbers3 = [1, 2, 3, 5, 8, 9, 6]
-const result2 = numbers3.forEach()
+const result2 = numbers3.forEach(n => n + 10)
+console.log(result2)
