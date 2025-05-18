@@ -43,3 +43,5 @@ console.log(myFamily[3])
 const myVisitConuntrty = ["Nepal", "Maldives", "Thailand", "India", "New Zealand", "Bhutan"]
 console.log(myVisitConuntrty[4])
 
+const readingTable = ["Books", "Pen", "Scale", "Table Lamp", "BookSelf"]
+console.log(readingTable[7])
