@@ -59,9 +59,9 @@ const numArray = [10, 20, 30, 40, 50]
 numArray.push(60);
 console.log(numArray)
 
-const friendList = ["Moynul", "Nayan", "Razibul", "Reja"]
+const colleagueList = ["Moynul", "Nayan", "Razibul", "Reja"]
 friendList.push("Pradip")
-console.log(friendList)
+console.log(colleagueList)
 
 const mobileGames = ["Free fire", "Pubji", "Candy Crush", "Tample Run"]
 mobileGames.pop()
@@ -74,3 +74,32 @@ console.log(numArray2)
 const myBooks = ["Miracle Morning", "Rich Dab Poor Dak", "Ekigai", "Time Management", "Atomic Habits", "Zero to One", "The Power of Positive Thinking", "The Art of Happiness"]
 myBooks.shift();
 console.log(myBooks)
+
+// .includes() .indexOf()
+
+// array.includes() = এ্যারের ভিতরে কোন উপদান আছে কি না তা খোঁজার জন্য এই মেথড ব্যবহার করা হয়
+// যদি নম্বর খোঁজার দরকার হয় তবে নম্বর লিখে খোঁজ করতে হবে
+// যদি স্ট্রিং ভ্যালু খোঁজার দরকার হয় তবে স্ট্রিং লিখে খোঁজ করতে হবে
+// Result will show only true or false.
+
+//array.indexOf() = Same as .includes() method. Difference, it will show index-এর মান।
+// index value starts 0 and above. Remember index value (-) is not acceptable.  
+
+const friendsAll = ["balam", "kalam", "salam", "gelam", "pailam"];
+const exist = friendsAll.includes("khailam")
+console.log(exist)
+
+const friendsAll2 = ["balam", "kalam", "salam", "gelam", "pailam"];
+const exist2 = friendsAll2.includes("salam")
+console.log(exist2)
+
+const friendsAll3 = ["balam", "kalam", "salam", "gelam", "pailam"];
+if (friendsAll3.includes('kalam')){
+    console.log("Party Is On")
+} else{
+    console.log("Party Is Off")
+}
+
+const friendsAll4 = ["balam", "kalam", "salam", "gelam", "pailam"];
+const index = friendsAll4.indexOf("khailam")
+console.log(index)
