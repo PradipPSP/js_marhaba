@@ -26,7 +26,7 @@ console.log(doubleAll(numbers))
 
 // In Array Functions
 
-const numbers = [2, 4, 6, 8, 10, 12, 15, 20, 30]
+// const numbers = [2, 4, 6, 8, 10, 12, 15, 20, 30]
 
 const doubleNum = numbers.map(num => num * 2);
 console.log(doubleNum)
@@ -50,7 +50,6 @@ console.log(firstLetter);
 const numbers3 = [1, 2, 3, 5, 8, 9, 6]
 const result2 = numbers3.forEach(n => n + 10)
 console.log(result2)
-
 
 
 let numbers = [30, 10, 50, 20, 70, 60, 40];
@@ -86,3 +85,48 @@ console.log("Total Marks of the Students =", totalMarks);
 
 let averageMarks = parseInt(totalMarks / students2.length)
 console.log("Average Marks : ", averageMarks)
+
+
+let numS = [5, 10, 15, 20];
+let sumNumS = numS.reduce((total, current)=> total + current, 0);
+console.log(sumNumS)
+
+let num2 = [3, 88, 2, 99, 42];
+// let maxNum = Math.max(...num2)
+let maxNum2 = num2.reduce((max, curr)=> curr > max ? curr : max)
+console.log(maxNum2)
+
+let num3 = [3, 88, 2, 99, 42];
+// let minNum2 = Math.min(...num3)
+let minNum3 = num3.reduce((min, curr) => min < curr ? min : curr)
+console.log(minNum3)
+
+
+// Find topScorer with marks
+
+const subjectNumber = [
+    {subject: "Bengli", name: "Pratim", marks: 85},
+    {subject: "English", name: "Pradip", marks: 75}
+];
+
+let topScorer = subjectNumber[0];
+
+for (let i = 1; i < subjectNumber.length; i++) {
+  if (subjectNumber[i].marks > topScorer.marks) {
+    topScorer = subjectNumber[i];
+  }
+}
+console.log(`${topScorer.name} with ${topScorer.marks} marks`);
+
+// Another Solution
+
+const subjectNumber = [
+    {subject: "Bengli", name: "Pratim", marks: 85},
+    {subject: "English", name: "Pradip", marks: 75}
+];
+
+let topScorer = subjectNumber.reduce((top, current) =>
+  current.marks > top.marks ? current : top
+);
+
+console.log(`${topScorer.name} with ${topScorer.marks} marks`);
