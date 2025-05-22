@@ -50,3 +50,39 @@ console.log(firstLetter);
 const numbers3 = [1, 2, 3, 5, 8, 9, 6]
 const result2 = numbers3.forEach(n => n + 10)
 console.log(result2)
+
+
+
+let numbers = [30, 10, 50, 20, 70, 60, 40];
+
+// Ascending 
+
+let ascending = [...numbers].sort((a, b)=> a - b);
+console.log("Ascending Num: ", ascending)
+
+// Descending 
+
+let descending = [...numbers].sort((a, b) => b - a);
+console.log("Descending Num :", descending);
+
+// sortByName students array
+
+const students2 = [
+    {name: "Pratim", age: 3.4, marks: 85},
+    {name: "Suchitra", age: 31, marks: 75},
+    {name: "Sandeep", age: 37, marks:40},
+    {name: "Rajdeep", age: 30, marks: 80},
+    {name: "Pradip", age: 36, marks:65},
+    {name: "Sujan", age: 32, marks: 55},
+    {name: "Mrinal", age: 33, marks:35},
+    {name: "Bishojit", age: 34, marks:34}
+];
+
+let sortByName = [...students2].sort((a, b) => a.name.localeCompare(b.name));
+// console.log(sortByName);
+
+let totalMarks = students2.reduce((total, students2) => total + students2.marks, 0)
+console.log("Total Marks of the Students =", totalMarks);
+
+let averageMarks = parseInt(totalMarks / students2.length)
+console.log("Average Marks : ", averageMarks)
