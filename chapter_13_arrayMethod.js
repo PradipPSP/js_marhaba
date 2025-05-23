@@ -130,3 +130,13 @@ let topScorer2 = subjectNumber2.reduce((top, current) =>
 );
 
 console.log(`${topScorer2.name} with ${topScorer2.marks} marks`);
+
+
+const snacksPrice = [30, 45, 20, 60, 10]
+const updatePrice = snacksPrice.map(snack => snack + 13);
+console.log(updatePrice); // [43, 58, 33, 73, 23]
+
+const playerList = ["Messi", "Maradona", "Pele", "Zidane", "Ronaldo", "Neymar"]
+const updateList = playerList.filter(player => player.length > 5)
+console.log(updateList); // ["Maradona", "Zidane", "Ronaldo", "Neymar"]
+
