@@ -152,3 +152,11 @@ const numbers5 = [10, 15, 20, 25, 30, 35, 40]
 // const dividedByThree = numbers5.map(num => parseInt(num / 3));
 const dividedByThree = numbers5.map(num => parseFloat(num /3))
 console.log(dividedByThree);
+
+const newFriendList = ["Leonardo", "Brad Pitt", "Kate Winslet", "Audrey Hepburn", "Johnny Depp"];
+const thirdLetter = [newFriendList.map(frind => frind[3])]
+console.log(thirdLetter); // ["n", "d", "e", "r", "n"]
+
+const nameList = ["Tom", "Harry", "Sam", "Jack"]
+const hName = nameList.find(name => name.toLowerCase().startsWith("h"));
+console.log(hName);
