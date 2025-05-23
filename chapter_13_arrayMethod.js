@@ -140,3 +140,15 @@ const playerList = ["Messi", "Maradona", "Pele", "Zidane", "Ronaldo", "Neymar"]
 const updateList = playerList.filter(player => player.length > 5)
 console.log(updateList); // ["Maradona", "Zidane", "Ronaldo", "Neymar"]
 
+const numbers4 = [10, 15, 20, 25, 30, 35, 40]
+const firstTwentyNum = numbers4.find(num => num > 20);
+console.log(firstTwentyNum); // [25]
+
+const height = [65, 70, 68, 72, 68, 73]
+const heightUpTo69 = height.filter(height => height > 69)
+console.log(heightUpTo69); // [70, 72, 73]
+
+const numbers5 = [10, 15, 20, 25, 30, 35, 40]
+// const dividedByThree = numbers5.map(num => parseInt(num / 3));
+const dividedByThree = numbers5.map(num => parseFloat(num /3))
+console.log(dividedByThree);
