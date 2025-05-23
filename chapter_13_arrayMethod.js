@@ -120,13 +120,13 @@ console.log(`${topScorer.name} with ${topScorer.marks} marks`);
 
 // Another Solution
 
-const subjectNumber = [
+const subjectNumber2 = [
     {subject: "Bengli", name: "Pratim", marks: 85},
     {subject: "English", name: "Pradip", marks: 75}
 ];
 
-let topScorer = subjectNumber.reduce((top, current) =>
+let topScorer2 = subjectNumber2.reduce((top, current) =>
   current.marks > top.marks ? current : top
 );
 
-console.log(`${topScorer.name} with ${topScorer.marks} marks`);
+console.log(`${topScorer2.name} with ${topScorer2.marks} marks`);
