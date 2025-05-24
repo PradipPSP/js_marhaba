@@ -158,5 +158,33 @@ const thirdLetter = [newFriendList.map(frind => frind[3])]
 console.log(thirdLetter); // ["n", "d", "e", "r", "n"]
 
 const nameList = ["Tom", "Harry", "Sam", "Jack"]
-const hName = nameList.find(name => name.toLowerCase().startsWith("h"));
-console.log(hName);
+const findNameH = nameList.find(name => name.toLowerCase().startsWith("h"));
+console.log(findNameH); // ["Harry"]
+
+
+const nameList2 = ["Pradim", "Pradip", "Pranesh", "Sujan", "Suchi", "Nitai"]
+const findNameH2 = nameList2.filter(name => name.toLowerCase().startsWith("p"));
+console.log(findNameH2); // ["Pradim", "Pradip", "Pranesh"]
+
+const array = [1, 2, 3, 4, 5, 6]
+const result = array.forEach(n => console.log(n))
+console.log(result)
+
+const animals = ['cow', 'goat', 'duck', 'horse', 'hen']
+const print = animals.forEach(ele => console.log(ele))
+
+const nested = [1, 2, [3, 4,[5, 6]]];
+const flattened = nested.flat(2); // যেহেতু মূল এ্যারের ভিতরে ২ টি নেস্টেড এ্যারে আছে এ জন্য .flat(2) লেখা। অর্থাৎ এখানে যে কয়টি নেস্টেড এ্যারের থাকবে সে কয়টি দিতে হবে। 
+console.log(flattened);
+
+const numbers6 = [80, 90, 100, 110, 130, 150]
+const checkUpTo100 = numbers6.some(num => num => 100);
+console.log(checkUpTo100);
+
+const numbers7 = [10, 20, 25, 35, 50, 50]
+const dividedByFive = numbers7.every(num => num % 5 === 0);
+console.log(dividedByFive);
+
+const ages = [18, 11, 15, 25]
+const upTo18 = ages.every(age => age => 18)
+console.log(upTo18);
