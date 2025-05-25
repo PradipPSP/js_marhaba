@@ -190,6 +190,10 @@ const numbers7 = [10, 20, 25, 35, 50, 50]
 const dividedByFive = numbers7.every(num => num % 5 === 0);
 console.log(dividedByFive); // true
 
+const words = ["hello", "World", "JSON", "then"]
+const oneWord = words.some(word => word == 'hello');
+console.log(oneWord);
+
 const ages = [18, 11, 15, 25]
 const upTo18 = ages.every(age => age >= 18)
 console.log(upTo18); // false
@@ -199,3 +203,60 @@ console.log(upTo18); // false
 // some চেক করে, অ্যারের অন্তত একটি আইটেম শর্ত পূরণ করে কি না। যদি করে, তাহলে true, অন্যথায় মিথ্যা।
 
 // every চেক করে, অ্যারের সব আইটেম শর্ত পূরণ করে কি না। যদি করে, তাহলে true, না করলে false।
+
+
+// reduce() কমিয়ে ফেলা
+
+const numbers8 = [4, 6, 10, 15, 25, 45, 50];
+let sum = 0; // here, 0 is initial Value
+for(const num of numbers8){
+  sum = sum + num // here, initial value (০) এর সাথে প্রত্যেক বার num যোগ হয়ে আবার initial value হচ্ছে আবার num যোগ হচ্ছে। এভাবে লুপ টি চলছে।
+};
+console.log(sum)
+
+// syntax: arrayName.reduce(callBackFunction, initialValue);
+// এখানে, অ্যারের নামের পরে ডট চিহ্ন দিয়ে reduce লিখবি, তারপর দুইটি জিনিস লাগবে। একটি কলব্যাক ফাংশন, আর একটি হচ্ছে প্রাথমিক মান বা ইনিশিয়াল ভ্যালু। 
+
+for(const num of numbers8){
+  sum = sum + num
+}; // here, initial value (০) এর সাথে প্রত্যেক বার num যোগ হয়ে আবার initial value হচ্ছে আবার num যোগ হচ্ছে। এভাবে লুপ টি চলছে। এটাকে একটু গুছিয়ে বললে:
+
+// (accumulator, currentValue) => doSomeWork বা উদাহরণের সাথে মিলিয়ে বললে বলা যায়----
+// (accumulator, currentValue) => accumulator + currentValue
+
+const total = numbers8.reduce((sum, num) => sum + num, 0);
+console.log(total); // 155
+
+const total2 =numbers8.reduce((p, c) => p + c, 0);
+console.log(total2) // 155
+
+// map, forEach, filter, find, reduce methor practice
+
+const products = [
+  {id : 1, name: 'hp', price : 75000},
+  {id : 2, name: 'dell', price : 65000},
+  {id : 3, name: 'lenovo', price : 70000},
+  {id : 4, name: 'mac', price : 95000}
+];
+
+const names = products.map(element => element.name);
+// console.log(names) // products name print 
+
+const priceUpToFifty = products.filter(product => product.price > 50000);
+// console.log(priceUpToFifty); // upto 50000 
+
+const priceLessThenEightyK = products.filter(product => product.price < 80000);
+// console.log(priceLessThenEightyK); // 
+
+const totalPrice = products.reduce((accumolator, current) => accumolator + current.price, 0);
+console.log(totalPrice) // 305000
+
+
+
+
+
+
+
+
+
+
