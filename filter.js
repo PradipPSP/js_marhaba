@@ -17,4 +17,10 @@ function doubledAll (numbers){ // doubledAll function এর প্যারা�
         } // loop চালিয়ে const numbers Array এর ভ্যালু টা ডাবল করলাম এবং ডাবল শুন্য এ্যারের মধ্যে কনস্ট ্ভ্যালু পুশ করলাম। 
     return doubled;
 };
-console.log(doubledAll(arr));
+// console.log(doubledAll(arr));
+
+let str = "pradip mondal"
+
+for (let i = 0; i <str.length; i++){
+    console.log(str[i])
+}
