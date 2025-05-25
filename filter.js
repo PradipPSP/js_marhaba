@@ -19,6 +19,7 @@ function doubledAll (numbers){ // doubledAll function এর প্যারা�
 };
 // console.log(doubledAll(arr));
 
+
 let str = "pradip mondal"
 
 for (let i = 0; i <str.length; i++){
