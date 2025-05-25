@@ -174,17 +174,28 @@ const animals = ['cow', 'goat', 'duck', 'horse', 'hen']
 const print = animals.forEach(ele => console.log(ele))
 
 const nested = [1, 2, [3, 4,[5, 6]]];
-const flattened = nested.flat(2); // যেহেতু মূল এ্যারের ভিতরে ২ টি নেস্টেড এ্যারে আছে এ জন্য .flat(2) লেখা। অর্থাৎ এখানে যে কয়টি নেস্টেড এ্যারের থাকবে সে কয়টি দিতে হবে। 
+const flattened = nested.flat(2); // যেহেতু মূল এ্যারের ভিতরে ২ টি নেস্টেড এ্যারে আছে এ জন্য .flat(2) লেখা। অর্থাৎ এখানে যে কয়টি নেস্টেড এ্যারের থাকবে সে কয়টি সংখ্যা দিতে হবে। 
 console.log(flattened);
 
+// some() every()
+
+// some() if one condition is true then result is true otherwise false
+// every() all condition is true then result is true otherwise false
+
 const numbers6 = [80, 90, 100, 110, 130, 150]
-const checkUpTo100 = numbers6.some(num => num => 100);
-console.log(checkUpTo100);
+const checkUpTo100 = numbers6.some(num => num >= 100);
+console.log(checkUpTo100); // true
 
 const numbers7 = [10, 20, 25, 35, 50, 50]
 const dividedByFive = numbers7.every(num => num % 5 === 0);
-console.log(dividedByFive);
+console.log(dividedByFive); // true
 
 const ages = [18, 11, 15, 25]
-const upTo18 = ages.every(age => age => 18)
-console.log(upTo18);
+const upTo18 = ages.every(age => age >= 18)
+console.log(upTo18); // false
+
+// Summary 
+
+// some চেক করে, অ্যারের অন্তত একটি আইটেম শর্ত পূরণ করে কি না। যদি করে, তাহলে true, অন্যথায় মিথ্যা।
+
+// every চেক করে, অ্যারের সব আইটেম শর্ত পূরণ করে কি না। যদি করে, তাহলে true, না করলে false।
