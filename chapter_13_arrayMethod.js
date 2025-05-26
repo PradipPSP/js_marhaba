@@ -251,6 +251,32 @@ const priceLessThenEightyK = products.filter(product => product.price < 80000);
 const totalPrice = products.reduce((accumolator, current) => accumolator + current.price, 0);
 console.log(totalPrice) // 305000
 
+// Practice Reduce() Method
+
+const numArray = [5, 10, 15, 50, 25, 30, 40]
+const sumOfArray = numArray.reduce((accumolator, current) => accumolator + current, 0);
+console.log(sumOfArray); // 175
+
+const myProducts = [
+  {name: 'shampoo', price: 100},
+  {name: 'toothpaste', price: 120},
+  {name: 'soap', price: 70},
+  {name: 'rice', price: 2500}
+];
+const productPrice = myProducts.reduce((total, current) => total + current.price, 0);
+console.log(productPrice); // 2790
+
+const educationStationary = [
+  {name: 'Book', price: 1500},
+  {name: 'Pen', price: 110},
+  {name: 'Bag', price: 650}
+];
+const totalPricee = educationStationary.reduce((education, stationary) => education + stationary.price, 0);
+console.log(totalPricee); // 2260
+
+
+
+
 
 
 
