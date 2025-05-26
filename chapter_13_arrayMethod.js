@@ -274,8 +274,21 @@ const educationStationary = [
 const totalPricee = educationStationary.reduce((education, stationary) => education + stationary.price, 0);
 console.log(totalPricee); // 2260
 
+const arrayNumbers = [1, 2, 3, 4, 5]
+const multiplication = arrayNumbers.reduce((multi, array) => multi * array, 1); // এখানে কলব্যাক ফাংশন এর সাথে অ্যারে সংখ্যা গুণ করা হয়েছে, যার ইনিশিয়াল ভ্যালু হচ্ছে ১।
+console.log(multiplication);
 
+const arrNumbers = [10, 20, 30, 40, 50, 80, 90]
+const maXNumber = arrNumbers.reduce(( max, arr) => max > arr ? max : arr, 1);
+console.log(maXNumber); // 90
 
+const arrNumberss = [10, 20, 30, 40, 50, 80, 90]
+const maXNumberr = arrNumberss.reduce(( max, arr) => max > arr ? max : arr);
+console.log(maXNumberr); // 90
+
+const arrNumbers2 = [10, 20, 30, 40, 50, 80, 90]
+const sumation = arrNumbers2.reduce((sum, array) => sum + array, 50);
+console.log(sumation) // 370, here array num sumation is 320 and initial value is 50, so total 370.
 
 
 
