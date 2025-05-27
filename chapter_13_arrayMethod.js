@@ -291,6 +291,25 @@ const sumation = arrNumbers2.reduce((sum, array) => sum + array, 50);
 console.log(sumation) // 370, here array num sumation is 320 and initial value is 50, so total 370.
 
 
+// চট করে sort কর
+
+const friendsName = ['Bob', 'Anna', 'Chris', 'Daddy'];
+friendsName.sort();
+console.log(friendsName); // ['Anna', 'Bob', 'Chris', 'Daddy', 'Zara']
+
+const numaric = [9, 6, 8, 5, 3, 1, 7, 2, 4]
+numaric.sort();
+console.log(numaric); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// ৯ পর্যন্ত সংখ্যাকে উপরোক্তভাবে সট করা গেলেও যখন দুই সংখ্যা হবে তখন আর numaric.sort() এ ফাংশন টি কাজ করবে না। কারণ sort() সংখ্যাকেও স্ট্রিং হিসাবে গণনা করে।
+
+// সমাধান ঃ .sort() এই ব্রাকেট এর ভিতরে একটি কলব্যাক ফাংশন দিতে হবে। যেহেতু এটি অ্যারের উপদানগুলোকে তুলনা করে তাই এই কলব্যাক ফাংশনকে বলে  কম্পেয়ার ফাংশন (compare funcation). 
+
+// এই কম্পেয়ার ফাংশনে ২ টি প্যারামিটার থাকবে। তুই যে কোন নাম দিতে পারবি। যেমনঃ (a, b) => a - b
+
+const numaric2 = [17, 25, 11, 51, 81, 45, 7];
+numaric2.sort((a, b) => a - b);
+console.log(numaric2); // [7, 11, 17, 25, 45, 51, 81]
 
 
 
