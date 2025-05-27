@@ -26,4 +26,12 @@ for (let i = 0; i <str.length; i++){
     console.log(str[i])
 }
 
+const agess = [
+  {name: 'Ali', age: 29},
+  {name: 'Jara', age: 22},
+  {name: 'Tariq', age: 35}
+];
+agess.sort((a, b) => a.age - b.age);
+console.log(agess);
+
 
