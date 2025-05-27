@@ -340,7 +340,8 @@ const offCollegueList = [
   { name: 'Bipul', age: 49},
   { name: 'Pratim', age: 3.6}
 ];
-offCollegueList.sort((a, b) => a.age - b.age);
+// offCollegueList.sort((a, b) => a.age - b.age);
+offCollegueList.sort((a, b)=> a.name.localeCompare(b.name));
 console.log(offCollegueList);
 
 const friends5 = [
@@ -350,6 +351,29 @@ const friends5 = [
 ];
 friends5.sort((a, b) => a.age - b.age);
 console.log(friends5);
+
+
+// Practice sort()
+
+const numaric4 = [50, 12, 25, 8, 15];
+numaric4.sort((a, b) => a -b);
+console.log(numaric4); // [8, 12, 15, 25, 50]
+
+const numaric5 = [50, 12, 25, 8, 15];
+numaric5.sort((a, b) => b - a);
+console.log(numaric5); // [50, 25, 15, 12, 8]
+
+const agess = [
+  {name: 'Ali', age: 29},
+  {name: 'Jara', age: 22},
+  {name: 'Tariq', age: 35}
+];
+agess.sort((a, b) => a.age - b.age);
+console.log(agess);
+
+const fNames = ['Pratim', 'Raju', 'Pradip', 'Suchitra', 'Animesh', 'Bishojit', 'Zara', 'Chanchal']
+fNames.sort();
+console.log(fNames); // ["Animesh", "Bishojit", "Chanchal", "Pradip", "Pratim", "Raju", "Suchitra", "Zara"]
 
 
 
