@@ -255,7 +255,7 @@ console.log(totalPrice) // 305000
 
 const numArray = [5, 10, 15, 50, 25, 30, 40]
 const sumOfArray = numArray.reduce((accumolator, current) => accumolator + current, 0);
-console.log(sumOfArray); // 175
+// console.log(sumOfArray); // 175
 
 const myProducts = [
   {name: 'shampoo', price: 100},
@@ -264,7 +264,7 @@ const myProducts = [
   {name: 'rice', price: 2500}
 ];
 const productPrice = myProducts.reduce((total, current) => total + current.price, 0);
-console.log(productPrice); // 2790
+// console.log(productPrice); // 2790
 
 const educationStationary = [
   {name: 'Book', price: 1500},
@@ -272,19 +272,19 @@ const educationStationary = [
   {name: 'Bag', price: 650}
 ];
 const totalPricee = educationStationary.reduce((education, stationary) => education + stationary.price, 0);
-console.log(totalPricee); // 2260
+// console.log(totalPricee); // 2260
 
 const arrayNumbers = [1, 2, 3, 4, 5]
 const multiplication = arrayNumbers.reduce((multi, array) => multi * array, 1); // এখানে কলব্যাক ফাংশন এর সাথে অ্যারে সংখ্যা গুণ করা হয়েছে, যার ইনিশিয়াল ভ্যালু হচ্ছে ১।
-console.log(multiplication);
+// console.log(multiplication);
 
 const arrNumbers = [10, 20, 30, 40, 50, 80, 90]
 const maXNumber = arrNumbers.reduce(( max, arr) => max > arr ? max : arr, 1);
-console.log(maXNumber); // 90
+// console.log(maXNumber); // 90
 
 const arrNumberss = [10, 20, 30, 40, 50, 80, 90]
 const maXNumberr = arrNumberss.reduce(( max, arr) => max > arr ? max : arr);
-console.log(maXNumberr); // 90
+// console.log(maXNumberr); // 90
 
 const arrNumbers2 = [10, 20, 30, 40, 50, 80, 90]
 const sumation = arrNumbers2.reduce((sum, array) => sum + array, 50);
@@ -295,11 +295,11 @@ console.log(sumation) // 370, here array num sumation is 320 and initial value i
 
 const friendsName = ['Bob', 'Anna', 'Chris', 'Daddy'];
 friendsName.sort();
-console.log(friendsName); // ['Anna', 'Bob', 'Chris', 'Daddy', 'Zara']
+// console.log(friendsName); // ['Anna', 'Bob', 'Chris', 'Daddy', 'Zara']
 
 const numaric = [9, 6, 8, 5, 3, 1, 7, 2, 4]
 numaric.sort();
-console.log(numaric); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// console.log(numaric); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 // ৯ পর্যন্ত সংখ্যাকে উপরোক্তভাবে সট করা গেলেও যখন দুই সংখ্যা হবে তখন আর numaric.sort() এ ফাংশন টি কাজ করবে না। কারণ sort() সংখ্যাকেও স্ট্রিং হিসাবে গণনা করে।
 
@@ -309,7 +309,7 @@ console.log(numaric); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 const numaric2 = [17, 25, 11, 51, 81, 45, 7];
 numaric2.sort((a, b) => a - b);
-console.log(numaric2); // [7, 11, 17, 25, 45, 51, 81]
+// console.log(numaric2); // [7, 11, 17, 25, 45, 51, 81]
 
 // ব্যাখ্যাঃ a - b 
 
@@ -323,7 +323,7 @@ console.log(numaric2); // [7, 11, 17, 25, 45, 51, 81]
 
 const numaric3 = [59, 69, 39, 29, 99, 19, 89, 49, 39, 9, 79];
 numaric3.sort((a, b) => b - a);
-console.log(numaric3); // [99, 89, 79, 69, 59, 49, 39, 39, 29, 19, 9]
+// console.log(numaric3); // [99, 89, 79, 69, 59, 49, 39, 39, 29, 19, 9]
 
 
 // object সাজানো
@@ -341,40 +341,75 @@ const offCollegueList = [
   { name: 'Pratim', age: 3.6}
 ];
 // offCollegueList.sort((a, b) => a.age - b.age);
-offCollegueList.sort((a, b)=> a.name.localeCompare(b.name));
-console.log(offCollegueList);
+// offCollegueList.sort((a, b)=> a.name.localeCompare(b.name));
+// console.log(offCollegueList);
 
 const friends5 = [
   { name: 'Zara', age: 25},
   { name: 'Bob', age: 20},
   { name: 'Anna', age: 30}
 ];
-friends5.sort((a, b) => a.age - b.age);
-console.log(friends5);
+// friends5.sort((a, b) => a.age - b.age);
+// console.log(friends5);
 
 
 // Practice sort()
 
 const numaric4 = [50, 12, 25, 8, 15];
 numaric4.sort((a, b) => a -b);
-console.log(numaric4); // [8, 12, 15, 25, 50]
+// console.log(numaric4); // [8, 12, 15, 25, 50]
 
 const numaric5 = [50, 12, 25, 8, 15];
 numaric5.sort((a, b) => b - a);
-console.log(numaric5); // [50, 25, 15, 12, 8]
+// console.log(numaric5); // [50, 25, 15, 12, 8]
 
 const agess = [
   {name: 'Ali', age: 29},
   {name: 'Jara', age: 22},
   {name: 'Tariq', age: 35}
 ];
-agess.sort((a, b) => a.age - b.age);
-console.log(agess);
+// agess.sort((a, b) => a.age - b.age);
+// console.log(agess);
 
 const fNames = ['Pratim', 'Raju', 'Pradip', 'Suchitra', 'Animesh', 'Bishojit', 'Zara', 'Chanchal']
-fNames.sort();
-console.log(fNames); // ["Animesh", "Bishojit", "Chanchal", "Pradip", "Pratim", "Raju", "Suchitra", "Zara"]
+// fNames.sort();
+// console.log(fNames); // ["Animesh", "Bishojit", "Chanchal", "Pradip", "Pratim", "Raju", "Suchitra", "Zara"]
 
 
+// উল্টপথের reverse()
 
+const colleagueNames = ['Pratim', 'Raju', 'Pradip', 'Suchitra', 'Animesh', 'Bishojit', 'Zara', 'Chanchal']
+// colleagueNames.reverse();
+// console.log(colleagueNames); // ["Chanchal", "Zara", "Bishojit", "Animesh", "Suchitra", "Pradip", "Raju", "Pratim"]
 
+const numaric6 = [50, 12, 25, 8, 15];
+// numaric6.reverse()
+// console.log(numaric6); // [15, 8, 25, 12, 50]
+
+// Practice
+
+const users = [
+  { name: 'Moynul', age: 30},
+  { name: 'Nayon', age: 28},
+  { name: 'Morirul', age: 29},
+  { name: 'Bishonath', age: 55},
+  { name: 'Jaggatbrato', age: 57},
+  { name: 'Subrata', age: 34},
+  { name: 'Provash', age: 44},
+  { name: 'Ankur', age: 21},
+  { name: 'Bipul', age: 49},
+  { name: 'Pratim', age: 3.6}
+];
+users.reverse();
+//console.log(users);
+
+// নাইস নাইস slice splice
+
+// তোর কাছে একটা পিজ্জা আছে, যার প্রতিটা স্লাইসকে তুই আলাদা আলাদাভাবে চিহ্নিত করতে পারিস। এখন তুই ঠিক করলি, মাঝের কয়েকটা স্লাইস আলাদা করে রাখবি। slice() ঠিক এই কাজটাই করে। এটা কোনো অ্যারের নির্দিষ্ট অংশকে কেটে আলাদা করে ফেলে, কিন্তু মূল অ্যারেকে বদলায় না।
+
+// স্লাইসের মধ্যে সাধারণত ২টা প্যারামিটার থাকে। প্রথম প্যারামিটার হচ্ছে, কোন ইনডেক্স থেকে কাটা শুরু করবে, আর কোন ইনডেক্সের আগ পর্যন্ত কাটতে চাস।
+ 
+const pizzaSlices = ['Bread', 'Cheese', 'Veggie', 'BBQ', 'Meet'];
+const selectedSlices = pizzaSlices.slice(1, 4);
+console.log(selectedSlices);
+console.log(pizzaSlices);
