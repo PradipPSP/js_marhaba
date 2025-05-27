@@ -326,6 +326,30 @@ numaric3.sort((a, b) => b - a);
 console.log(numaric3); // [99, 89, 79, 69, 59, 49, 39, 39, 29, 19, 9]
 
 
+// object সাজানো
+
+const offCollegueList = [
+  { name: 'Moynul', age: 30},
+  { name: 'Nayon', age: 28},
+  { name: 'Morirul', age: 29},
+  { name: 'Bishonath', age: 55},
+  { name: 'Jaggatbrato', age: 57},
+  { name: 'Subrata', age: 34},
+  { name: 'Provash', age: 44},
+  { name: 'Ankur', age: 21},
+  { name: 'Bipul', age: 49},
+  { name: 'Pratim', age: 3.6}
+];
+offCollegueList.sort((a, b) => a.age - b.age);
+console.log(offCollegueList);
+
+const friends5 = [
+  { name: 'Zara', age: 25},
+  { name: 'Bob', age: 20},
+  { name: 'Anna', age: 30}
+];
+friends5.sort((a, b) => a.age - b.age);
+console.log(friends5);
 
 
 
