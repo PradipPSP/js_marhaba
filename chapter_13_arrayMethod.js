@@ -438,8 +438,8 @@ console.log(fullPizza);
 
 // const moviess = ['Jaws', 'Rocky', 'Alien', 'Avatar', 'Coco', 'Up', 'It'];
 // const removed = moviess.splice(2, 3);
-// console.log(removed);
-// console.log(moviess);
+// console.log(removed); // ['Alien', 'Avatar', 'Coco']
+// console.log(moviess); 
 
 // এই কোডের ব্যাখ্যা বাংলায়:
 
@@ -460,6 +460,30 @@ console.log(fullPizza);
 // ['Alien', 'Avatar', 'Coco']
 
 // অর্থাৎ, moviess অ্যারে থেকে 'Alien', 'Avatar', ও 'Coco' সরিয়ে ফেলা হয়েছে এবং সেগুলো removed অ্যারেতে রয়েছে।
+
+const numbers9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const deleted = numbers9.splice(4, 4, 11, 13)
+console.log(deleted); // এখানে ইনডেক্স নম্বর ৪ হতে কাটা শুরু হয়েছে এবং ৪ নম্বর ইনডেক্সসহ ৪ টি ইনডেক্স কাটা হয়েছে যা ডিলিটেড অ্যারেতে সংরক্ষণ করা হয়েছে। তারপর ১১ ও ১৩ নম্বর ভ্যালু এ্যাড করা হয়েছে মুল এ্যারেতে।
+console.log(numbers9);
+
+// Pracrice slice() splice()
+
+const fruits =['Apple', 'Banana', 'Cherry', 'Date'];
+const sliceFruits = fruits.slice(1, 3);
+console.log(sliceFruits); // ["Banana", "Cherry"]
+
+const cars = ['Tesla', 'BMW', 'Toyota', 'Ford'];
+const newCars = cars.slice(0, 2);
+console.log(newCars); // ["Tesla", "BMW"]
+
+const movieList = ['Inception', 'Titanic', 'Joker', 'Avatar', 'Interstellar'];
+const deletedMovieList = movieList.splice(2, 2, 'Batman', 'Superman')
+console.log(deletedMovieList); // ["Joker", "Avatar"]
+console.log(movieList) // ["Inception", "Titanic", "Batman", "Superman", "Interstellar"]
+
+const players = ['Messi', 'Ronaldo', 'Neymar', 'Mbappe'];
+const deletedPlayers = players.splice(2, 1, 'Halland');
+console.log(players); // ["Messi", "Ronaldo", "Halland", "Mbappe"]
 
 
 
