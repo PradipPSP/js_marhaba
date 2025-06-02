@@ -30,6 +30,41 @@ for(const year of dateOfBirth){
 
 const favCricketTeam = ['Sachin', 'Ganguli', 'Dravid', 'Laxman', 'Gavasker'];
 for(const favTeam of favCricketTeam){
-    console.log(favTeam);
-}
+    // console.log(favTeam);
+};
 
+const examDate = ['june 15', 'june 18', 'june 22', 'june 30']
+for (const exam of examDate){
+    // console.log(exam);
+};
+
+// while loop
+
+/*
+Declare a loop variable with an initial value
+while(loop condition){
+    repetitive task
+    Change the value of the loop variable
+} */
+
+/*
+let num = 0; // (step 1 & 2: declear a variable name & initial value)
+while(num < 5){ // condition (step 3: loop condition)
+    console.log(num); // (step 4: repetitive rask)
+    num = num + 1; // change value (step 5: change the value)
+};
+*/
+
+let num =0;
+while(num <= 10){
+    // console.log(num);
+    // num = num + 1 // way 1
+    // num += 1 // way 2
+    // num++ // way 3
+};
+
+let num2 = 0;
+while(num2 <= 5){
+    console.log('Bamboo Eating High School');
+    num2++
+};
