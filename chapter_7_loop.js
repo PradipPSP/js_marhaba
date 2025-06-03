@@ -101,3 +101,12 @@ while(num7 <=110){
     console.log(num7 / 2);
    num7++
 };
+
+let num8 = 1;
+let sum = 0;
+while(num8<=10){
+    // console.log(num8);
+    sum = sum + num8;
+    num8++;
+}
+console.log("Sum :", sum);
