@@ -92,6 +92,12 @@ while(num5 <=100){
 
 let num6 =1;
 while(num6 <=10){
-    console.log(`${1} x ${3}`);
-   num6+=3;
+    console.log(num6 * 3);
+   num6++
+};
+
+let num7 =90;
+while(num7 <=110){
+    console.log(num7 / 2);
+   num7++
 };
