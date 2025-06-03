@@ -92,21 +92,43 @@ while(num5 <=100){
 
 let num6 =1;
 while(num6 <=10){
-    console.log(num6 * 3);
+    // console.log(num6 * 3);
    num6++
 };
 
 let num7 =90;
 while(num7 <=110){
-    console.log(num7 / 2);
+    // console.log(num7 / 2);
    num7++
 };
 
 let num8 = 1;
 let sum = 0;
 while(num8<=10){
-    // console.log(num8);
     sum = sum + num8;
     num8++;
 }
-console.log("Sum :", sum);
+// console.log("Sum :", sum);
+// console.log(`Sum : ${sum}`)
+
+let num9 = 50;
+while(num9 <=100){
+    // console.log(num9);
+    num9++
+}
+
+let digit = 5;
+let add = 0;
+while(digit <=15){
+   add = add + digit;
+    digit++;
+}
+console.log(`Addition : ${add}`);
+
+let studentsRoll = 1;
+let total = 0;
+while(studentsRoll <= 50){
+    total = total + studentsRoll;
+    studentsRoll++;
+};
+console.log(`Total Roll Adition : ${total} `)
