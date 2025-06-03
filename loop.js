@@ -65,6 +65,33 @@ while(num <= 10){
 
 let num2 = 0;
 while(num2 <= 5){
-    console.log('Bamboo Eating High School');
+    // console.log('Bamboo Eating High School');
     num2++
+};
+
+// practice while loop
+
+let num3 =1;
+while(num3 <= 10){
+    // console.log('I will practice coding at least 3 hours in a day');
+    num++;
+};
+
+let num4 =1;
+while(num4 <=20){
+    // console.log(num4);
+    num4++;
+}
+
+
+let num5 =50;
+while(num5 <=100){
+    // console.log(num5);
+    num5++;
+}
+
+let num6 =1;
+while(num6 <=10){
+    console.log(`${1} x ${3}`);
+   num6+=3;
 };
