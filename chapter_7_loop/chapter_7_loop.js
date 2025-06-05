@@ -123,7 +123,7 @@ while(digit <=15){
    add = add + digit;
     digit++;
 }
-console.log(`Addition : ${add}`);
+// console.log(`Addition : ${add}`);
 
 let studentsRoll = 1;
 let total = 0;
@@ -131,4 +131,34 @@ while(studentsRoll <= 50){
     total = total + studentsRoll;
     studentsRoll++;
 };
-console.log(`Total Roll Adition : ${total} `)
+// console.log(`Total Roll Addition : ${total} `);
+
+let num10 =21;
+let total2 = 0;
+while(num10 <=50){
+    total2 = total2 + num10;
+   num10++;
+
+// console.log(total2); // প্রতিবারের যোগফর দেখাবে ভিতরে কনসোল লক করলে
+};
+// console.log(total2); // বাহিরে কনসোল লগ করলে একবাবে সর্বমোট যোগফল দেখাবে।
+
+
+let num11 =20;
+let total3 = 0;
+while(num11 <=40){
+    total3 = total3 + num11;
+   num11++;
+};
+console.log(total3); // 630
+
+// For Loop
+
+// Syntax: for(declare loop variable with initial value; loop condition; change loop variable){One or more lines of code that will be repeated}
+
+// example:
+
+// for(let i = 0; i<7; i++){console.log(i)}
+
+// Practice for loop
+
