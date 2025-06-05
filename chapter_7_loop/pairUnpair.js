@@ -69,9 +69,25 @@ for (let i = 1; i <= 40; i++){
         // console.log(i)
         sum = sum + i;
     }
-}
+};
 console.log(sum);
 
 for(let i = 1; i <= 50; i+=4){
     console.log(i)
+};
+
+for(let i = 0; i<= 100; i++){
+    if(i % 6 == 0 && i % 9 == 0){
+        console.log(i)
+    }
 }
+
+
+let add = 0;
+for(let i = 1; i<= 50; i++){
+    if(i % 3 == 0 && i % 4 == 0){
+        // console.log(i);
+        add += i;
+    }
+}
+console.log(add);
