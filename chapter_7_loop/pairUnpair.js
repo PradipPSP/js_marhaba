@@ -47,3 +47,31 @@ for(let i = 1; i<= 30; i++){
         console.log(i) // 15, 30
     }
 }
+
+// Practice Q
+
+for (let i = 20; i <= 50; i++){
+    if(i % 7 == 0){
+        console.log(i)
+    }
+}
+
+for(let i = 40; i<= 80; i++){
+    if(i % 5 == 0 && i % 7 == 0){
+        console.log(i)
+    }
+}
+
+
+let sum = 0;
+for (let i = 1; i <= 40; i++){
+    if(i % 13 == 0){
+        // console.log(i)
+        sum = sum + i;
+    }
+}
+console.log(sum);
+
+for(let i = 1; i <= 50; i+=4){
+    console.log(i)
+}
