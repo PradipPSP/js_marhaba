@@ -7,7 +7,26 @@ for(let i = 1; i <= 15; i++){
     }
 }
 
-// using continue to print pair numbers
+// skip number from loop
+
+
+for(let i = 1; i <= 10; i++){
+    if(i == 7){
+        continue; // This words skip if condition
+    }
+    console.log(i)
+};
+
+
+for(let i = 1; i <= 10; i++){
+    if(i == 5 || i == 7){
+        continue; // This words skip if condition
+    }
+    console.log(i)
+}
+
+
+// using continue to print Even numbers
 
 for(let i = 1; i <= 15; i++){
     if(i % 2 == 1){
@@ -16,10 +35,10 @@ for(let i = 1; i <= 15; i++){
     console.log(i)
 }
 
-// using continue to print pair numbers
+// using continue to print Odd numbers
 
 for(let i = 1; i <= 15; i++){
-    if(i % 2 == 1){
+    if(i % 2 == 0){
         continue;
     }
     console.log(i)
