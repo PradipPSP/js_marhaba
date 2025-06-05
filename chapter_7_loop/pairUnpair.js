@@ -34,3 +34,16 @@ for (let i = 1; i <= 30; i++){
 }
 
 // divided by 3 or 5
+for(let i = 1; i<= 30; i++){
+    if(i % 3 == 0 || i % 5 == 0){
+        console.log(i)
+    }
+}
+
+
+// divided by 3 & 5
+for(let i = 1; i<= 30; i++){
+    if(i % 3 == 0 && i % 5 == 0){
+        console.log(i) // 15, 30
+    }
+}
