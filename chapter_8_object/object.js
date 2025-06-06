@@ -57,4 +57,21 @@ const motorbike = {
 // console.log(motorbike.brand);
 // console.log(motorbike.name);
 
+const bird = {
+    name : "Moyna",
+    color : "Mat Black",
+    food : "Insects",
+    home : "Tree Branch"
+}
+// console.log(bird.name)
 
+const laptop = {
+    name : "HP ProBook",
+    brand : "HP",
+    processor : "core i5",
+    gen : 7,
+    ram : 4,
+    display : 15,
+    price : 75000
+};
+console.log(laptop.brand);
