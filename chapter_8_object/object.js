@@ -1,6 +1,8 @@
 // Object
 // Syntax: const students = {}
 
+const { Children } = require("react");
+
 // practice
 
 const teacher = {
@@ -19,5 +21,40 @@ const tree = {
     height : "Eight Feet",
     fruit : true 
 };
-console.log(tree.fruit);
+// console.log(tree.fruit);
+
+const cow = {
+    name : "lalu",
+    age : 10,
+    isTeeth : true,
+    color : "white",
+    leg : 4,
+    eye : 2,
+    height : "four Feet" 
+};
+console.log(cow.color);
+
+const father = {
+    name : "Sukumar Mondal",
+    profession : "Farmer",
+    age : 65,
+    Children : 3,
+    height : 5.2,
+    village : "Horinkhola",
+    district : "Satkhira"
+};
+// console.log(father.profession);
+// console.log(father.name);
+
+const motorbike = {
+    name : "Sp Shine",
+    brand : "Honda",
+    color : "Blue",
+    price : 129000,
+    tyre : 2,
+    highSpeed : 100
+}
+// console.log(motorbike.brand);
+// console.log(motorbike.name);
+
 
