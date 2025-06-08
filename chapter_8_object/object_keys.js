@@ -10,7 +10,7 @@ const computer = {
     ssd : '512gb'
 };
 const keys = Object.keys(computer);
-console.log(keys);
+// console.log(keys);
 
 
 // Object.values()
@@ -18,7 +18,7 @@ console.log(keys);
 // কাজ: অবজেক্টের এর all value show করে 
 
 const values = Object.values(computer);
-console.log(values);
+// console.log(values);
 
 
 
@@ -31,7 +31,7 @@ const profile = {
 };
 const profileKeys = Object.keys(profile); // at first search all profile keys
 const hasName = profileKeys.includes('name'); // নাম আছে কি না চেক করা 
-console.log(hasName); // true
+// console.log(hasName); // true
 
 
 // Way 2 || Easy Way
@@ -63,3 +63,17 @@ if(profile.city === 'Dhaka'){
 
 // Output : Aram sob gram e
 
+
+// Object.entries()
+
+// জোড়ায় জোড়ায় entries কর
+
+const person = {
+    name : 'Pradip Mondal',
+    age : 36,
+    country : 'Bangladesh'
+};
+const entries = Object.entries(person);
+// console.log(entries); 
+
+// এই আউটপুটে তুই দেখতে পাবি প্রতিটি প্রোপার্টির নাম এবং তার মান একটি অ্যারের ভেতরে জোড়া হিসেবে এসেছে। একে বলা হয় array of arrays বা two-dimensional array !
