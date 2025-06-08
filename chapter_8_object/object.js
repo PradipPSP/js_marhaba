@@ -124,5 +124,28 @@ const favPlace = {
 // console.log(favPlace['popularity']);
 
 
+const phone = {
+    brand : 'Nokia',
+    color : 'black',
+    price : 5000
+};
+// console.log(phone['price']);
+
+
+const library = {
+    name :  'public library',
+    location : 'Dhaka',
+    books : 5000
+};
+// console.log(library.location);
+
+const movie = {
+    name : 'Inception',
+    director : 'Nolan',
+    rating : 9
+};
+// console.log(movie.rating);
+
+
 
 
