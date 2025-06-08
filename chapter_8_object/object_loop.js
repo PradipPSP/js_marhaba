@@ -109,8 +109,46 @@ const books = {
 };
 for(const key in books){
     const value = books[key];
-    console.log(value);
+    // console.log(value);
 };
+
+const numbers = {
+    a : 10,
+    b : 20,
+    c : 30,
+    d : 40
+};
+let numValues = Object.values(numbers);
+let sum = 0;
+for(let i = 0; i < numValues.length; i++){
+    sum += numValues[i];
+}
+// console.log(sum);
+
+
+const player = {
+    name : 'Shourav Ganguli',
+    age : 55,
+    sports : 'cricket',
+    team : 'India',
+    isRetire: true 
+};
+const playerValues = Object.values(player);
+// console.log(playerValues);
+
+const building = {
+    floors : 10,
+    address : {
+        street : 'Main Road',
+        city : 'Dhaka'
+    },
+    type : 'commercial'
+};
+
+for(const key in building){
+    const value = building[key];
+    console.log(key, value);
+}
 
 
 
