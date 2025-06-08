@@ -53,7 +53,7 @@ const motorbike = {
     price : 129000,
     tyre : 2,
     highSpeed : 100
-}
+};
 // console.log(motorbike.brand);
 // console.log(motorbike.name);
 

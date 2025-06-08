@@ -87,5 +87,30 @@ const phone = {
 const phoneKeys = Object.keys(phone);
 for(const key of phoneKeys){
     const value = phone[key];
-    console.log(key, value);
-}
+    // console.log(key, value);
+};
+
+
+const bike = {
+    name : "Sp Shine",
+    brand : "Honda",
+    color : "Blue",
+    price : 129000,
+    tyre : 2,
+    highSpeed : 100
+};
+const bikeValues = Object.values(bike);
+// console.log(bikeValues);
+
+const books = {
+    book1 : 'Herry Potter',
+    book2 : 'The Hobbit',
+    book3 : 'Game of Thrones'
+};
+for(const key in books){
+    const value = books[key];
+    console.log(value);
+};
+
+
+
