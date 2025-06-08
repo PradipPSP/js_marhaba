@@ -46,3 +46,46 @@ const bookKeys = Object.keys(book);
 
 const bookValues = Object.values(book);
 // console.log(bookValues);
+
+const article = {
+    title : 'Learning Js',
+    category : 'Programming'
+};
+
+const articleKeys = Object.keys(article);
+const hasAuthor = articleKeys.includes('author');
+// console.log(hasAuthor); // false
+
+// way 2
+
+if('author' in article){
+    console.log('author hasIn article');
+} else{
+    // console.log('No Author');
+};
+
+const laptop = {
+    brand : "Dell",
+    price : 60000,
+    hardDisk : 512,
+    ram : 4,
+    screenSize : 14
+};
+
+for(const key in laptop){
+    const value = laptop[key];
+    // console.log(key, value);
+}
+
+
+const phone = {
+    brand : 'Nokia',
+    color : 'black',
+    price : 5000
+};
+
+const phoneKeys = Object.keys(phone);
+for(const key of phoneKeys){
+    const value = phone[key];
+    console.log(key, value);
+}
