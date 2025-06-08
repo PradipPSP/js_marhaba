@@ -1,5 +1,5 @@
 
-// Object.keys()
+// Object.keys() || Object.values()
 
 // কাজ: অবজেক্টের এর all key show করে 
 
@@ -11,7 +11,6 @@ const computer = {
 };
 const keys = Object.keys(computer);
 console.log(keys);
-
 
 
 // Object.values()
@@ -33,3 +32,34 @@ const profile = {
 const profileKeys = Object.keys(profile); // at first search all profile keys
 const hasName = profileKeys.includes('name'); // নাম আছে কি না চেক করা 
 console.log(hasName); // true
+
+
+// Way 2 || Easy Way
+
+if('email' in profile){
+    console.log('Email exists')
+} else{
+    console.log('No Email. No Spam')
+};
+
+// OutPut: No Eamil. No Spam
+
+
+// way 3 || hasOwnProperty
+
+if(profile.hasOwnProperty('email')){
+    console.log('Email niye boroloki dekhai')
+} else{
+    console.log('Email chara jibon achol')
+};
+
+// OutPut : Email chara jibon achol.
+
+if(profile.city === 'Dhaka'){
+    console.log('Jam er sohor Dhaka')
+} else{
+    console.log('Aram sob gram e')
+};
+
+// Output : Aram sob gram e
+
