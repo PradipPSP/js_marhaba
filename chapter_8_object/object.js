@@ -147,5 +147,33 @@ const movie = {
 // console.log(movie.rating);
 
 
+const college2 = {
+    name : 'ndc',
+    established : 1949,
+    groups : ['Science', 'Arts', 'Commerce']
+};
+// console.
+
+
+const family = {
+    father : {
+        name : 'Sukumar Mondal',
+        age : 65,
+        profession : 'Farmer'
+    },
+    mother : {
+        name : 'Amari Mondal',
+        age : 51,
+        profession : 'House Wife'
+    }
+};
+console.log(family.father.age);
+console.log(family.mother.age);
+
+let fatherAge = family.father.age;
+let motherAge = family.mother.age;
+console.log(fatherAge + motherAge);
+
+
 
 
