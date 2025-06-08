@@ -32,7 +32,7 @@ const cow = {
     eye : 2,
     height : "four Feet" 
 };
-console.log(cow.color);
+// console.log(cow.color);
 
 const father = {
     name : "Sukumar Mondal",
@@ -74,7 +74,7 @@ const laptop = {
     display : 15,
     price : 75000
 };
-console.log(laptop.brand);
+// console.log(laptop.brand);
 
 const college = {
     name : "vnc",
@@ -88,6 +88,41 @@ const college = {
         }
     }
 };
-console.log(college.unique.color);
-console.log(college.unique.result.merit);
-console.log(college.events[1]);
+// console.log(college.unique.color);
+// console.log(college.unique.result.merit);
+// console.log(college.events[1]);
+
+
+
+// Practice Home inside Home
+
+const player = {
+    name : 'Shourav Ganguli',
+    age : 55,
+    sports : 'cricket',
+    team : 'India',
+    isRetire: true 
+};
+// console.log(player.team);
+
+
+const laptop2 = {
+    brand : "Dell",
+    price : 60000,
+    hardDisk : 512,
+    ram : 4,
+    screenSize : 14
+};
+// console.log(laptop2.screenSize);
+
+
+const favPlace = {
+    name : "Cox's Bazar",
+    distance: "400km",
+    popularity : 'high'
+}
+// console.log(favPlace['popularity']);
+
+
+
+
