@@ -1,0 +1,59 @@
+
+// delete || Object.freeze() || Object.seal()
+
+const { use } = require("react");
+
+// delete
+
+const person = {
+    name : 'Pradip',
+    age : 36,
+    country : 'Bangladesh'
+};
+delete person.age;
+// console.log(person);
+
+
+// Object.freeze()
+// কাজ : অবজেক্টের কোন মান ডিলিট করতে দিবে না, কোন প্রোপার্টি যোগ করতে দিবে না, কোন মান পরিবর্তন করতে দিবে না। 
+
+const adminUser = {
+    username : 'admin',
+    email : 'admin@example.com',
+    role : 'superadmin'
+};
+Object.freeze(adminUser);
+
+// try to modify
+
+adminUser.role = 'user';
+adminUser.password = '1258657';
+delete adminUser.email;
+// console.log(adminUser);
+
+
+
+// Object.seal()
+// কাজ : অবজেক্টের কোন মান ডিলিট করতে দিবে না, কোন প্রোপার্টি যোগ করতে দিবে না। শুধুমাত্র অবজেক্টকে মোডিফাই করতে দিবে।
+
+const user = {
+    username : 'pradipmondal',
+    email : 'pradipmondal@example.com',
+    password : 'oldPassword'
+};
+Object.seal(user);
+
+// try to change
+delete user.password;
+user.nickName = 'Pratim Mondal'
+// console.log(user); // no work
+
+// try to modify
+
+user.username = 'pradip';
+user.password = 'newPassWord';
+// console.log(user);
+
+
+
+
