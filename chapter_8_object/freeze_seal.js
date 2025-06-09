@@ -96,4 +96,24 @@ const gadget = {
     color : 'black'
 };
 delete gadget.price;
-console.log(gadget);
+// console.log(gadget);
+
+
+const animal = {
+    name : 'Tiger',
+    location : 'Sundarban'
+};
+Object.freeze(animal);
+animal.name = 'Royel Bengal Tiger';
+animal.location = 'Sundarban BD';
+// console.log(animal);
+
+
+const food = {
+    name : 'Pizza',
+    price : 500,
+    size : 'Large'
+};
+Object.seal(food);
+food.price = 450;
+console.log(food);
