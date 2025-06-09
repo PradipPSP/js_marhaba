@@ -80,3 +80,20 @@ Object.freeze(player);
 player.team = 'Argentina'; // You can't change anything when use freeze()
 // console.log(player);
 
+const book = {
+    title : 'Harry Potter',
+    author : 'JK Rowling',
+    pages : 500
+};
+Object.seal(book);
+book.author = 'Rowling';
+// console.log(book);
+
+
+const gadget = {
+    name : 'iPhone',
+    price : 120000,
+    color : 'black'
+};
+delete gadget.price;
+console.log(gadget);
