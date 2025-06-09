@@ -44,8 +44,8 @@ const user = {
 Object.seal(user);
 
 // try to change
-delete user.password;
-user.nickName = 'Pratim Mondal'
+delete user.password; // delete not allowed
+user.nickName = 'Pratim Mondal' // adding not allowed
 // console.log(user); // no work
 
 // try to modify
@@ -55,5 +55,6 @@ user.password = 'newPassWord';
 // console.log(user);
 
 
+// Difference between Seal & Freeze
 
-
+// Seal & Freeze একই ধরণের জিনিস। হালকা পার্থক্য হচ্ছে, সিল প্রোপার্টি মান চেঞ্জ করতে দেয়, আর ফ্রিজ সেটাও করত দেয় না।
