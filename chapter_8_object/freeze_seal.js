@@ -58,3 +58,25 @@ user.password = 'newPassWord';
 // Difference between Seal & Freeze
 
 // Seal & Freeze একই ধরণের জিনিস। হালকা পার্থক্য হচ্ছে, সিল প্রোপার্টি মান চেঞ্জ করতে দেয়, আর ফ্রিজ সেটাও করত দেয় না।
+
+
+// practice
+
+const headPhone = {
+    brand : 'Sony',
+    price : 3000,
+    color : 'red'
+};
+Object.freeze(headPhone);
+headPhone.warranty = 'true'; // no work
+// console.log(headPhone);
+
+const player = {
+    name : 'Messi',
+    goal : 800,
+    club : 'Inter Miami'
+};
+Object.freeze(player);
+player.team = 'Argentina'; // You can't change anything when use freeze()
+// console.log(player);
+
