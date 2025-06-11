@@ -61,4 +61,18 @@ function taskDone () {
     console.log('I help my child with his studies in the evening');
     console.log('Finishing Dinner with my family');
 };
-taskDone()
+// taskDone();
+
+function greetMe () {
+    console.log('Morning! Have a great day');
+};
+greetMe();
+
+
+
+function getFavFriends () {
+    console.log('Dinesh');
+    console.log('Dilip');
+    console.log('Abu Dadud');
+};
+getFavFriends();
