@@ -66,7 +66,7 @@ function taskDone () {
 function greetMe () {
     console.log('Morning! Have a great day');
 };
-greetMe();
+// greetMe();
 
 
 
@@ -75,4 +75,13 @@ function getFavFriends () {
     console.log('Dilip');
     console.log('Abu Dadud');
 };
-getFavFriends();
+// getFavFriends();
+
+
+function introMyself () {
+    console.log('My name is Pradip Mondal');
+    console.log('A complete family Man');
+    console.log("Govt. Service Holder");
+    console.log('Honest Man');
+};
+introMyself();
