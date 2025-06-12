@@ -105,3 +105,32 @@ function subjectMark (a, b, c){
 // subjectMark(45, 65, 80);
 
 
+function myAge (a, b){
+    const age = a - b;
+    // console.log('My Age is', age, 'year.');
+};
+const currentYear = 2025;
+const birthYear = 1991;
+myAge(currentYear, birthYear);
+
+
+function bazar (a, b){
+    const pice = a / b;
+    // console.log('You can buy', pice, 'pice only');
+};
+const totalTaka = 105;
+const currentPrice = 35;
+bazar(totalTaka, currentPrice);
+
+
+function average (a, b, c, d){
+    const averageNumber = (a + b + c + d) / 4;
+    // console.log('The Average Number is', averageNumber);
+};
+// average(10, 20, 30, 40);
+
+let $1stNum = 10;
+let $2ndNum = 20;
+let $3rdNum = 30;
+let $4thNum = 40;
+average($1stNum, $2ndNum, $3rdNum, $4thNum);
