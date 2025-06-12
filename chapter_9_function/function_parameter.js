@@ -72,9 +72,36 @@ function addNumbers (a, b){
     for(const num of arguments){
         sum +=num;
     }
-    console.log(sum);
+    // console.log(sum);
 };
 addNumbers(5, 8, 10, 15, 20);
 
 
 // মনে রাখবি, ফাংশনে চাইলে একা বা একাধিক প্যারামিটার পাঠানো যায় এবং প্যারামিটারের মান পরিবর্তন করে একই ফাংশনকে বার বার ব্যবহার করা যায়।
+
+
+// Practice
+
+
+function fatherSon (m, n){
+    const sum = m + n;
+    // console.log('The total age of', m, '&', n, 'is:', sum);
+};
+const fatherAgee = 50;
+const sonAge = 15;
+fatherSon(fatherAgee, sonAge);
+
+
+function calculator (a, b){
+    const multiplication = a * b;
+    // console.log(multiplication);
+};
+calculator(20, 15);
+
+function subjectMark (a, b, c){
+    const totalMark = a + b + c;
+    console.log(totalMark);
+};
+// subjectMark(45, 65, 80);
+
+
