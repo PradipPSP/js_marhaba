@@ -156,4 +156,7 @@ function phoneTime (parDay){
     const month = parDay * 30;
     return month;
 };
+const outPut = phoneTime(6);
+console.log('Using Phone Time is', outPut, 'hours.');
+
 // console.log('Using Phone Time', phoneTime(5), 'hours.');
