@@ -149,4 +149,11 @@ function toBeHundredYear (birthYear){
     const hundredYear = birthYear + year;
     return hundredYear;
 };
-console.log(toBeHundredYear(1991));
+// console.log(toBeHundredYear(1991));
+
+
+function phoneTime (parDay){
+    const month = parDay * 30;
+    return month;
+};
+// console.log('Using Phone Time', phoneTime(5), 'hours.');
