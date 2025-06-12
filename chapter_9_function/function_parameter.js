@@ -134,3 +134,19 @@ let $2ndNum = 20;
 let $3rdNum = 30;
 let $4thNum = 40;
 average($1stNum, $2ndNum, $3rdNum, $4thNum);
+
+
+function salesPrice (costPrice){
+    const profit = 250;
+    const sellingPrice = costPrice + profit;
+    return sellingPrice
+};
+// console.log(salesPrice(630)); // 880
+
+
+function toBeHundredYear (birthYear){
+    const year = 100;
+    const hundredYear = birthYear + year;
+    return hundredYear;
+};
+console.log(toBeHundredYear(1991));
