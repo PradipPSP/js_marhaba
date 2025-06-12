@@ -57,9 +57,24 @@ console.log(result); // 13
 
 // অর্থাৎ এখানে প্রথম ২ টি আর্গুমেন্টস এর যোগফল বের করে দিচ্ছে এবং বাকিগুলি ইগনোর করছে। সবগুলি পেতে হলে ফাংশনের ভিতরে একটি চমৎকার জিনিস আছে, সেটাকে বলে arguments, আর কোনো ফাংশনের ভিতরে arguments কে কনসোল লগ করলে সেই ফাংশন কল করার সময় যত প্যারামিটার দেয়া হইছে, সব পেয়ে চাবি।
 
-function addNumbers (a, b){
+/* function addNumbers (a, b){
     console.log(arguments);
     return a + b;;
 };
 const result = addNumbers(5, 8, 10, 15, 20);
-console.log(result); 
+console.log(result); // [Arguments] { '0': 5, '1': 8, '2': 10, '3': 15, '4': 20 } 13
+*/
+
+// এই arguments জিনিসটা অ্যারের মতো দখতে হলেও এটা কিন্তু কোন অ্যারে না; বরং এটাকে বলে অ্যারের মত দেখতে অবজেক্ট (array like object). তবে এই arguments এর উপর লুপ চালিয়ে যে কোন কাজ করা যায়।
+ 
+function addNumbers (a, b){
+    let sum = 0;
+    for(const num of arguments){
+        sum +=num;
+    }
+    console.log(sum);
+};
+addNumbers(5, 8, 10, 15, 20);
+
+
+// মনে রাখবি, ফাংশনে চাইলে একা বা একাধিক প্যারামিটার পাঠানো যায় এবং প্যারামিটারের মান পরিবর্তন করে একই ফাংশনকে বার বার ব্যবহার করা যায়।
