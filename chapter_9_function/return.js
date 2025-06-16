@@ -164,7 +164,7 @@ function getAverageNumber (numbers){
 };
 let num = [100, 200, 400];
 let average = getAverageNumber(num);
-console.log(average);
+// console.log(average);
 
 /*
 ব্যাখ্যা বাংলায়:
@@ -173,3 +173,23 @@ console.log(average);
 
     তারপর sum / numbers.length দিয়ে গড় (average) বের করছি।
 */
+
+
+function isNegative (number){
+    if(number < 0){
+        // console.log(number * -1);
+    } else{
+        // console.log('Number is Positive');
+    }
+};
+// isNegative(-5);
+
+
+function ifNegative (num){
+    if(num < 0){
+        return num * -1; // return num < 0 ? num * -1 : num;
+    }
+    return num;
+};
+// console.log(ifNegative(-10));
+// console.log(ifNegative(18));
