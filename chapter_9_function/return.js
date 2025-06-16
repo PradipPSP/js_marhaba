@@ -69,5 +69,28 @@ function isOdd(num){
         return false;
     }
 };
-console.log(isOdd(9));
-console.log(isOdd(8));
+// console.log(isOdd(9));
+// console.log(isOdd(8));
+
+
+// Practice 
+
+function largeTen(num){
+    if(num > 10){
+        return true;
+    }else{
+        return false;
+    }
+};
+// console.log(largeTen(11));
+// console.log(largeTen(10));
+
+function dividedBy13 (num){
+    if(num % 13 === 0){
+        return true;
+    }else{
+        return false;
+    }
+};
+console.log(dividedBy13(26));
+console.log(dividedBy13(27));
