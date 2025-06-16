@@ -147,3 +147,29 @@ function lengthOfString (str){
 let myStr = "Pratim Mondal";
 let strLength = lengthOfString(myStr);
 // console.log('The String Length is', strLength);
+
+function averageNum (a, b, c){
+    const average = (a + b + c) / 3;
+    // console.log('The average number is', average);
+};
+averageNum(10, 15, 20);
+
+
+function getAverageNumber (numbers){
+    let sum = 0;
+    for(let num of numbers){
+        sum += num;
+    }
+    return sum / numbers.length;
+};
+let num = [100, 200, 400];
+let average = getAverageNumber(num);
+console.log(average);
+
+/*
+ব্যাখ্যা বাংলায়:
+
+    sum ভ্যারিয়েবল দিয়ে সব সংখ্যার যোগফল বের করছি।
+
+    তারপর sum / numbers.length দিয়ে গড় (average) বের করছি।
+*/
