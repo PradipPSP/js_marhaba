@@ -99,10 +99,51 @@ function dividedBy13 (num){
 
 function restaurant (rice, curry, drinks){
     const totalPrice = rice + curry + drinks;
-    console.log('Total Bill is', totalPrice, 'tk.');
+    // console.log('Total Bill is', totalPrice, 'tk.');
 };
 let rice = 40;
 let curry = 60;
 let drinks = 20;
 
 restaurant(rice, curry, drinks);
+
+
+/* function isVote (age){
+    if(age > 18){
+        console.log('Eligible for Voting')
+    }else{
+        console.log('Not Eligible')
+    }
+};
+isVote(18);
+isVote(19);
+*/
+
+function nid (age){
+    if(age > 18){
+        return true;
+    }else{
+        return false;
+    }
+};
+// console.log(nid(18));
+// console.log(nid(19));
+
+function getStringLength(str){
+    return str.length;
+};
+let myString = 'Pradip Mondal';
+let length = getStringLength(myString);
+// console.log('The length of My String is', length);
+
+
+function lengthOfString (str){
+    let count = 0;
+    for(let char of str){
+        count++
+    }
+    return count;
+};
+let myStr = "Pratim Mondal";
+let strLength = lengthOfString(myStr);
+// console.log('The String Length is', strLength);
