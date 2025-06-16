@@ -193,3 +193,9 @@ function ifNegative (num){
 };
 // console.log(ifNegative(-10));
 // console.log(ifNegative(18));
+
+
+function evenSizedString(str){
+    console.log(str);
+};
+evenSizedString('Dhaka');
