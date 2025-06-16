@@ -92,5 +92,17 @@ function dividedBy13 (num){
         return false;
     }
 };
-console.log(dividedBy13(26));
-console.log(dividedBy13(27));
+// console.log(dividedBy13(26));
+// console.log(dividedBy13(27));
+
+
+
+function restaurant (rice, curry, drinks){
+    const totalPrice = rice + curry + drinks;
+    console.log('Total Bill is', totalPrice, 'tk.');
+};
+let rice = 40;
+let curry = 60;
+let drinks = 20;
+
+restaurant(rice, curry, drinks);
