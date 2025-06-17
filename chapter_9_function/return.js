@@ -199,3 +199,6 @@ function evenSizedString(str){
     console.log(str);
 };
 evenSizedString('Dhaka');
+
+
+

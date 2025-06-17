@@ -356,7 +356,7 @@ const friends5 = [
 // Practice sort()
 
 const numaric4 = [50, 12, 25, 8, 15];
-numaric4.sort((a, b) => a -b);
+numaric4.sort((a, b) => a - b);
 // console.log(numaric4); // [8, 12, 15, 25, 50]
 
 const numaric5 = [50, 12, 25, 8, 15];
@@ -466,7 +466,8 @@ const deleted = numbers9.splice(4, 4, 11, 13)
 console.log(deleted); // এখানে ইনডেক্স নম্বর ৪ হতে কাটা শুরু হয়েছে এবং ৪ নম্বর ইনডেক্সসহ ৪ টি ইনডেক্স কাটা হয়েছে যা ডিলিটেড অ্যারেতে সংরক্ষণ করা হয়েছে। তারপর ১১ ও ১৩ নম্বর ভ্যালু এ্যাড করা হয়েছে মুল এ্যারেতে।
 console.log(numbers9);
 
-// Pracrice slice() splice()
+
+// Practice slice() splice()
 
 const fruits =['Apple', 'Banana', 'Cherry', 'Date'];
 const sliceFruits = fruits.slice(1, 3);
@@ -486,4 +487,15 @@ const deletedPlayers = players.splice(2, 1, 'Halland');
 console.log(players); // ["Messi", "Ronaldo", "Halland", "Mbappe"]
 
 
+// .includes()
 
+function filteredArray (arr, elem){
+    let newArr = [];
+    for (let i = 0; i <arr.length; i++){
+        if(!arr[i].includes(elem)){
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+};
+console.log(filteredArray([[1, 2, 3], [2, 3, 4], [3, 4, 5], [4, 5, 6]], 3));
