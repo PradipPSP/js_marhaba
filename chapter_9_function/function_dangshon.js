@@ -54,9 +54,45 @@ const isEven = evenSizedString('Human');
 console.log(isEven);
 
 Output: false
+
+
+এখন হালকা একটু ডিফারেন্ট একটা ফাংশন দেখি। এইখানে দুইটা প্যারামিটার। প্রথম প্যারামিটারে একটা সংখ্যা। আর সেকেন্ড প্যারামিটারে একটা বুলিয়ান।
+
+যদি সেকেন্ড প্যারামিটারের মান true হয়, তাহলে প্রথম প্যারামিটার হিসেবে যে সংখ্যা আসবে, সেটাকে দ্বিগুণ করে গুণফল রিটার্ন করবি। আর যদি সেকেন্ড প্যারামিটার false হয়, তাহলে প্রথম প্যারামিটারকে তিনগুণ করে রেজাল্টকে রিটার্ন করবি। নিচে এই ফাংশনকে দুইবার কল করা হয়েছে। দুইটা আলাদা প্যারামিটার দিয়ে।
+
+function doubleOrTriple(num, doDouble) {
+    if (doDouble === true) {
+    const result = num * 2;
+    return result;
+} else {
+    const result = num * 3;
+    return result;
+    }
+};
+console.log(doubleOrTriple(5, true));
+console.log(doubleOrTriple(5, false))
+
+Output:
+10
+15
+
+এখানে তুই নতুন একটা জিনিস দেখতে পাচ্ছস, সেটা হচ্ছে আমরা প্যারামিটারের মধ্যে কোনো একটা বুলিয়ান ভ্যালু পাস করছি। সুতরাং তুই চাইলে যেকোনো ফাংশনের মধ্যে বুলিয়ান টাইপের ভ্যালু পাস করতে পারিস।
+
+আবার, তুই চাইলে যেকোনো ফাংশনের মধ্যে প্যারামিটার হিসেবে array ও পাস করতে পারিস। নিচে একটা ফাংশন আছে, যেটার প্যারামিটার হিসেবে একটা nums নামক একটা array-কে নেওয়া হচ্ছে। তারপর সেই array-এর মধ্যে উপাদান কয়টা আছে, সেটাকে একটা ভেরিয়েবলে রেখে সেই ভেরিয়েবলকে রিটার্ন করে দিচ্ছে।
+
+function numberOfElement(nums) {
+    const len = nums.length;
+    return len;
+};
+
+const len = numberOfElement([12, 15, 20, 222, 25, 4550, 10]);
+console.log(len);
+
+Output : 7
+
 */
 
-function evenSizedString(str){
+ function evenSizedString(str){
     const size = str.length;
     if(size % 2 === 0){
         return true;
@@ -65,5 +101,27 @@ function evenSizedString(str){
     }
 };
 const isEven = evenSizedString('Human');
-console.log(isEven);
+// console.log(isEven);
 
+
+
+function doubleOrTriple(num, doDouble) {
+    if (doDouble === true) {
+    const result = num * 2;
+    return result;
+} else {
+    const result = num * 3;
+    return result;
+    }
+};
+// console.log(doubleOrTriple(5, true));
+// console.log(doubleOrTriple(5, false));
+
+
+function numberOfElement(nums) {
+    const len = nums.length;
+    return len;
+};
+
+const len = numberOfElement([12, 15, 20, 222, 25, 4550, 10]);
+console.log(len);
