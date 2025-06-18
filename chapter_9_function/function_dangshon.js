@@ -125,3 +125,11 @@ function numberOfElement(nums) {
 
 const len = numberOfElement([12, 15, 20, 222, 25, 4550, 10]);
 console.log(len);
+
+
+// Practice Question Solve
+
+function array (arr, elem){
+
+}
+
