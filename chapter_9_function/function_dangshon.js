@@ -207,15 +207,34 @@ function numbers (num){
 // console.log(numbers(15));
 
 function numberArray (arr){
-    for(let i = 0; i < arr.length; i++){
-        return arr[0] + arr[1];
-    }
-    return arr;
+    return arr[0] + arr[1];
 };
 let number = [30, 20, 30, 40]
-console.log(numberArray(number));
+// console.log(numberArray(number));
+
+// যদি অ্যারের সকল উপাদান যোগা করে চাই
+
+function numberArr (arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i]
+    }
+    return sum;
+};
+let number2 = [30, 20, 30, 40]
+// console.log(numberArr(number2)); // সকল অ্যারে উপদান যোগ করতে লুপ টি চালানো হয়েছে
 
 
+function numberN (n){
+    if(n > 0){
+        return n * 2;
+    } else if(n < 0){
+        return n * 3
+    } else{
+        return 'Input a Valid Number'
+    }
+};
+console.log(numberN(150));
 
 
 // AI Help
