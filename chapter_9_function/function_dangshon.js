@@ -171,6 +171,51 @@ function chekckArrDetails (arr){
             return 'The Array Element is Odd.'
         }
 };
+// console.log(chekckArrDetails([]));
+// আউটপুট: অ্যারে ফাঁকা
+
+// console.log(chekckArrDetails([1, 2, 3]));
+// আউটপুট: অ্যারে উপাদানের সংখ্যা বিজোড়
+
+// console.log(chekckArrDetails([1, 2, 3, 4]));
+// আউটপুট: অ্যারে উপাদানের সংখ্যা জোড়
+
+// console.log(chekckArrDetails(["apple", 2, 3]));
+// আউটপুট: অ্যারেতে সংখ্যাভিত্তিক উপাদান নেই বা মিশ্র উপাদান আছে
+
+// console.log(checkArrayDetails(["a", "b", 3, ]));
+// আউটপুট: অ্যারেতে সংখ্যাভিত্তিক উপাদান নেই বা মিশ্র উপাদান আছে
+
+function getFirstLetter (name) {
+    if(typeof name !== 'string' || name.length === 0){
+        return 'Please input a valid name'
+    } // যদি নাম স্ট্রিং না হয় অথবা যদি  ফাংশনটি শুন্য হয় তাহলে বলবে, দয়া করে একটি নাম প্রদান করুন
+    return name[0];
+};
+// console.log(getFirstLetter('pratim'));
+// console.log(getFirstLetter(123));
+
+function numbers (num){
+    if(num > 10){
+        return num / 10;
+    } else if(num < 10){
+        return num * 10;
+    } else{
+        return 'Input a valid number'
+    }
+};
+// console.log(numbers(15));
+
+function numberArray (arr){
+    for(let i = 0; i < arr.length; i++){
+        return arr[0] + arr[1];
+    }
+    return arr;
+};
+let number = [30, 20, 30, 40]
+console.log(numberArray(number));
+
+
 
 
 // AI Help
