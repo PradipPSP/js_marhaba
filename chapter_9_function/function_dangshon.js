@@ -234,7 +234,45 @@ function numberN (n){
         return 'Input a Valid Number'
     }
 };
-console.log(numberN(150));
+// console.log(numberN(150));
+
+
+function myName (a, b){
+    if(a.length > b.length){
+        return true;
+    } else if(a.length < b.length){
+        return false;
+    } else if(a.length === b.length){
+        return 'The Name length is equal'
+    }else{
+        return 'Input a valid name'
+    }
+};
+// console.log(myName('Pradip', 'Raju'));
+
+
+function myNumber (a, b){
+    let multiplication = 0;
+    return multiplication += a * b; // 210
+    // return multiplication = multiplication + (a * b); 
+    // 210 কারণ এখানে multiplication এর পুরাতন ভ্যালুর সাথে নতুন ভ্যালু যোগ হবে।
+
+    // return multiplication = a * b; // 200 হবে কারণ এখানে multiplication এর পুরাতন ভ্যালু বাদ হয়ে নতুন ভ্যালু হবে।
+};
+// console.log(myNumber(10, 20));
+
+
+function numbers (x, y){
+    let result = x * y;
+        if(result > 100){
+            return result / 2;
+        } else if(result < 100){
+            return result;
+        } else{
+            return 'The Result is Exactly 100'
+        }
+};
+console.log(numbers(5, 3));
 
 
 // AI Help
