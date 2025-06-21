@@ -52,3 +52,65 @@ function friendsOddNumbers (numbers){
 const oddNum = [5, 15, 8, 7];
 const sumTotal= friendsOddNumbers(oddNum);
 // console.log(sumTotal);
+
+
+function getFirstSmallest(arr){
+    if(arr.length === 0){
+        return 'Array is empty'
+    }
+    
+    let smallest = arr[0]; // assume the first element is the smallest 
+
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] < smallest){
+            smallest = arr[i];
+        }
+    }
+    return smallest;
+};
+
+let numbersArr = [20, 25, 15, 10, 50, 5, 85]
+let result = getFirstSmallest(numbersArr);
+// console.log('The Smallest element is', result);
+
+
+/*
+Explanation (in Bengali):
+
+    arr[0] কে প্রথমেই ছোটতম ধরে নিচ্ছি।
+
+    এরপর লুপ চালিয়ে প্রতিটি উপাদান চেক করছি যদি কোনোটা smallest এর চেয়ে ছোট হয় তাহলে সেটাই নতুন smallest হয়ে যাবে।
+
+    ফলে প্রথম ছোটতম সংখ্যাটাই return হবে।
+*/
+
+let numbersArray = [45, 22, 89, 17, 56];
+let smallest = Math.min(...numbersArray);
+// console.log("First smallest element is:", smallest);
+
+
+
+function getSmallerOfFirstTwo(arr) {
+    if (arr.length < 2) {
+        return "অ্যারে-তে অন্তত দুইটি উপাদান থাকতে হবে।";
+    }
+
+    return arr[0] < arr[1] ? arr[0] : arr[1];
+}
+
+// উদাহরণ:
+let ArrayNumbers = [30, 45, 100, 20];
+let arrayResult = getSmallerOfFirstTwo(ArrayNumbers);
+console.log("প্রথম দুইটির মধ্যে ছোটটি হলো:", arrayResult);
+
+/*
+ব্যাখ্যা (Bengali):
+
+    প্রথমে চেক করছি অ্যারেতে কমপক্ষে ২টি উপাদান আছে কি না।
+
+    এরপর ternary operator ব্যবহার করে চেক করছি arr[0] < arr[1] কিনা।
+
+        যদি হয়, তাহলে arr[0] রিটার্ন করবে।
+
+        না হলে arr[1] রিটার্ন করবে।
+*/
