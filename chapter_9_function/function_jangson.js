@@ -36,5 +36,19 @@ function sumOfOddNumbers(numbers){
 };
 const numbers = [10, 15, 21, 23, 11, 20, 40];
 const oddTotal = sumOfOddNumbers(numbers);
-console.log('The Odd Numbers total =', oddTotal);
+// console.log('The Odd Numbers total =', oddTotal);
 
+// Practice Function Jungson
+
+function friendsOddNumbers (numbers){
+    let sum = 0;
+    for(const num of numbers){
+        if(num % 2 ===1){
+            sum +=num;
+        }
+    }
+    return sum
+};
+const oddNum = [5, 15, 8, 7];
+const sumTotal= friendsOddNumbers(oddNum);
+// console.log(sumTotal);
