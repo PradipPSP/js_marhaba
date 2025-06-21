@@ -173,16 +173,29 @@ function dividedArray (arr){
     if (!Array.isArray(arr) || arr.length === 0) {
         return "Invalid or empty array.";
     }
-
     let sum = 0;
     for(let i = 0; i < arr.length; i++){
         if(arr[i] % 4 === 0){
             sum += arr[i];
         } 
     }
-    return sum === 0 ? "No elements divisible by 4." : sum;
+    return sum === 0 ? 'No elements divisible by 4.' : sum;
 };
 
 let friendArray = [2, 4, 5, 7, 8, 32, 16, 45];
 let sumOfFriendArr = dividedArray(friendArray);
-console.log(sumOfFriendArr);
+// console.log(sumOfFriendArr);
+
+
+function processNumber (num) {
+    if(typeof num !== 'number' || isNaN(num)){
+        return 'Invalid input, please enter a valid number.'
+    }
+
+    if(num < 20){
+        return num * 2
+    } else {
+        return num / 20;
+    }
+};
+console.log(processNumber(25));
