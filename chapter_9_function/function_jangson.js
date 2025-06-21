@@ -89,7 +89,21 @@ let smallest = Math.min(...numbersArray);
 // console.log("First smallest element is:", smallest);
 
 
+// Find small element of first two array element
 
+function firstSmallElement (arr){
+    if(arr.length < 2){
+        return 'Array Must be contain at least two element'
+    }
+
+    return arr[0] < arr[1] ? arr[0] : arr[1];
+};
+let array = [25, 15, 10, 40];
+let resultOfArray = firstSmallElement(array);
+// console.log(resultOfArray);
+
+
+/*
 function getSmallerOfFirstTwo(arr) {
     if (arr.length < 2) {
         return "অ্যারে-তে অন্তত দুইটি উপাদান থাকতে হবে।";
@@ -99,11 +113,12 @@ function getSmallerOfFirstTwo(arr) {
 }
 
 // উদাহরণ:
-let ArrayNumbers = [30, 45, 100, 20];
+
+let ArrayNumbers = [45, 35, 100, 20];
 let arrayResult = getSmallerOfFirstTwo(ArrayNumbers);
 console.log("প্রথম দুইটির মধ্যে ছোটটি হলো:", arrayResult);
 
-/*
+
 ব্যাখ্যা (Bengali):
 
     প্রথমে চেক করছি অ্যারেতে কমপক্ষে ২টি উপাদান আছে কি না।
@@ -114,3 +129,60 @@ console.log("প্রথম দুইটির মধ্যে ছোটটি 
 
         না হলে arr[1] রিটার্ন করবে।
 */
+
+function myAge (age){
+    if(age < 18){
+        return 'My Age is 18 years.'
+    } else if(age > 45){
+        return 'My Age is 45 years.'
+    } else if (age >= 18 && age <= 45){
+        return 'My Age is ' +  age + ' years.';
+    } else{
+        return 'Not A Valid Number'
+    }
+};
+
+// console.log(myAge(25));
+
+/*
+
+উন্নত ও যাচাইকৃত ফাংশন 
+
+function myAge (age){
+
+    // Check if age is a number and not NaN
+
+    if (typeof age !== 'number' || isNaN(age)) {
+        return 'Not a valid number.';
+    }
+
+    if(age < 18){
+        return 'My Age is 18 years.';
+    } else if(age > 45){
+        return 'My Age is 45 years.';
+    } else{
+        return 'My Age is ' +  age + ' years.';
+    }
+};
+
+console.log(myAge(20));
+*/
+
+function dividedArray (arr){
+
+    if (!Array.isArray(arr) || arr.length === 0) {
+        return "Invalid or empty array.";
+    }
+
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] % 4 === 0){
+            sum += arr[i];
+        } 
+    }
+    return sum === 0 ? "No elements divisible by 4." : sum;
+};
+
+let friendArray = [2, 4, 5, 7, 8, 32, 16, 45];
+let sumOfFriendArr = dividedArray(friendArray);
+console.log(sumOfFriendArr);
