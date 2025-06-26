@@ -198,4 +198,39 @@ function processNumber (num) {
         return num / 20;
     }
 };
-console.log(processNumber(25));
+// console.log(processNumber(25));
+
+
+function negativeArray(arr){
+    if(!Array.isArray(arr) || arr.length === 0){
+        return "Invalid Or Empty Array"
+    }
+
+    let total = 0;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] < 0){
+            total += arr[i];
+        }
+    }
+    return total === 0 ? "No Negative Array Element" : total;
+};
+let negArr = [-10, 15, 20, -30, 15];
+let totalArr = negativeArray(negArr);
+// console.log(totalArr);
+
+function multiArray (arr){
+    if(!Array.isArray(arr) || arr.length === 0){
+        return "Invalid Or Empty Array"
+    }
+
+    let sumOf = 1;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] % 3 === 0){
+            sumOf *= arr[i];
+        }
+    }
+    return sumOf === 1 ? "No Element divisible by 3" : sumOf;
+};
+let multiArr = [15, 3, 10, 20, 23];
+let totalOf = multiArray(multiArr);
+console.log(totalOf)
