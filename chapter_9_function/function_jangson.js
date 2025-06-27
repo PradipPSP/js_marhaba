@@ -38,6 +38,8 @@ const numbers = [10, 15, 21, 23, 11, 20, 40];
 const oddTotal = sumOfOddNumbers(numbers);
 // console.log('The Odd Numbers total =', oddTotal);
 
+
+
 // Practice Function Jungson
 
 function friendsOddNumbers (numbers){
