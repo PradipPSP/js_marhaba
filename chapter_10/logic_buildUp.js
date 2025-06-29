@@ -25,7 +25,7 @@ function mileToKilometer(mile){
     return kilometer;
 };
 const mile = 50;
-console.log(mileToKilometer(mile));
+// console.log(mileToKilometer(mile));
 
 
 function kiloToMile(kilo){
@@ -33,4 +33,22 @@ function kiloToMile(kilo){
     return mile2;
 };
 const result = kiloToMile(50);
-console.log(result);
+// console.log(result);
+
+
+// Practice
+
+
+function mileToGoj(mile){
+    const goj = mile * 1760;
+    return goj
+};
+
+const totalGoj = mileToGoj(13);
+// console.log(totalGoj);
+
+function kiloWatToKilowKalory (kiloWat){
+    const kiloKalory = kiloWat * 860;
+    return kiloKalory;
+};
+console.log(kiloWatToKilowKalory(5));
