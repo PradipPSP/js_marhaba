@@ -4,7 +4,7 @@ function inchToFeet (inch){
    return feet;
 };
 const tableHeight = inchToFeet(38);
-console.log(tableHeight);
+// console.log(tableHeight);
 
 
 
@@ -18,4 +18,19 @@ function inchToFeet2(inch){
 
 };
 const glassHeight = inchToFeet2(55);
-console.log(glassHeight);
+// console.log(glassHeight);
+
+function mileToKilometer(mile){
+    const kilometer = mile * 1.60934;
+    return kilometer;
+};
+const mile = 50;
+console.log(mileToKilometer(mile));
+
+
+function kiloToMile(kilo){
+    const mile2 = kilo * 0.621371;
+    return mile2;
+};
+const result = kiloToMile(50);
+console.log(result);
