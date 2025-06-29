@@ -47,8 +47,35 @@ function mileToGoj(mile){
 const totalGoj = mileToGoj(13);
 // console.log(totalGoj);
 
+
 function kiloWatToKilowKalory (kiloWat){
     const kiloKalory = kiloWat * 860;
     return kiloKalory;
 };
-console.log(kiloWatToKilowKalory(5));
+// console.log(kiloWatToKilowKalory(5));
+
+
+
+function hourToSecond (hour){
+    const totalSecond = hour * 3600;
+    return totalSecond;
+};
+// console.log(hourToSecond(5))
+
+
+function cmToMeter(cm){
+    if(typeof cm !== 'number' || cm < 0){
+        return 'PLease enter a valid non-negative number';
+    }
+    return cm / 100;
+};
+console.log(cmToMeter(350));
+
+
+function inchToCm(inch){
+    if(typeof inch !== 'number' || inch < 0){
+        return 'Please enter a valid non-negative number'
+    }
+    return inch * 2.54;
+};
+console.log(inchToCm(300))
