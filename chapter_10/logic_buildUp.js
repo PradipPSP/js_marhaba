@@ -69,7 +69,7 @@ function cmToMeter(cm){
     }
     return cm / 100;
 };
-console.log(cmToMeter(350));
+// console.log(cmToMeter(350));
 
 
 function inchToCm(inch){
@@ -78,4 +78,22 @@ function inchToCm(inch){
     }
     return inch * 2.54;
 };
-console.log(inchToCm(300))
+// console.log(inchToCm(300));
+
+
+function poundToKilogram(pound){
+    if(typeof pound !== 'number' || pound < 0){
+        return 'Please enter a valid non-negative number'
+    }
+    return pound * 0.453;
+};
+// console.log(poundToKilogram(12))
+
+
+function gojToMeter(goj){
+    if(typeof goj !== 'number' || goj < 0){
+        return 'Please enter a valid non-negative number'
+    }
+    return goj * 0.91;
+};
+console.log(gojToMeter(50))
