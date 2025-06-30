@@ -108,23 +108,8 @@ function dayToMonth(day){
 // console.log(dayToMonth(75))
 
 
-function leapYear(year){
-    if(typeof year !== 'number' || year < 0){
-        return 'Please enter a valid non-negative number'
-    } 
-    
-    if(year % 4 === 0){
-        return true
-    } else{
-        return false;
-    }
 
-};
-const lipYear = leapYear('2050');
-// console.log(lipYear);
-
-
-function isLeapYear(year){
+/* function isLeapYear(year){
     if(typeof year !== 'number' || year < 0){
         return 'Please enter a valid non-negative number'
     } else if(year % 400 === 0){
@@ -137,3 +122,40 @@ function isLeapYear(year){
         return false;
     }
 };
+const isLipYear1 = isLeapYear(2100);
+const isLipYear2 = isLeapYear(2400);
+const isLipYear3 = isLeapYear(2500);
+const isLipYear4 = isLeapYear(2052);
+console.log(isLipYear1, isLipYear2, isLipYear3, isLipYear4);
+*/
+// উন্নত সংস্করণ (ছোট করে লেখা):
+
+
+function isLeapYear(year){
+    if(typeof year !== 'number' || year < 0){
+        return 'Please enter a valid non-negative number'
+    }
+    return (year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)
+};
+const isLipYear1 = isLeapYear(2100);
+const isLipYear2 = isLeapYear(2400);
+const isLipYear3 = isLeapYear(2500);
+const isLipYear4 = isLeapYear(2052);
+console.log(isLipYear1, isLipYear2, isLipYear3, isLipYear4);
+
+/*
+এই লজিক অনুযায়ী:
+
+    যদি year 400 দিয়ে ভাগ যায় (অর্থাৎ year % 400 === 0 হয়), তাহলে লিপ ইয়ার (true)
+    উদাহরণ: 2000, 2400
+
+    অথবা (OR) যদি:
+
+        year 4 দিয়ে ভাগ যায় (i.e., year % 4 === 0)
+
+        এবং year 100 দিয়ে ভাগ না যায় (i.e., year % 100 !== 0)
+        তাহলে লিপ ইয়ার (true)
+        উদাহরণ: 2024, 2052
+
+    উপরের কোনোটাই যদি না মেলে, তাহলে false রিটার্ন হবে।
+*/
