@@ -96,4 +96,13 @@ function gojToMeter(goj){
     }
     return goj * 0.91;
 };
-console.log(gojToMeter(50))
+// console.log(gojToMeter(50))
+
+
+function dayToMonth(day){
+    if(typeof day !== 'number' || day < 0){
+        return 'Please enter a valid non-negative number'
+    }
+    return day / 30;
+};
+// console.log(dayToMonth(75))
