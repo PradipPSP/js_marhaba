@@ -106,3 +106,19 @@ function dayToMonth(day){
     return day / 30;
 };
 // console.log(dayToMonth(75))
+
+
+function leapYear(year){
+    if(typeof year !== 'number' || year < 0){
+        return 'Please enter a valid non-negative number'
+    } 
+    
+    if(year % 4 === 0){
+        return true
+    } else{
+        return false;
+    }
+
+};
+const lipYear = leapYear('2050');
+console.log(lipYear);
