@@ -121,4 +121,19 @@ function leapYear(year){
 
 };
 const lipYear = leapYear('2050');
-console.log(lipYear);
+// console.log(lipYear);
+
+
+function isLeapYear(year){
+    if(typeof year !== 'number' || year < 0){
+        return 'Please enter a valid non-negative number'
+    } else if(year % 400 === 0){
+        return true;
+    } else if(year % 100 === 0){
+        return false;
+    } else if(year % 4 === 0){
+        return true;
+    } else{
+        return false;
+    }
+};
