@@ -74,5 +74,36 @@ function evenNumAverage(numbers){
 const numberArr = [12, 13, 65, 22, 25, 30, 40];
 // const numberArr = [15, 13, 11, 9]
 const average = evenNumAverage(numberArr);
-console.log('Average of the Even numbers is:', average);
+// console.log('Average of the Even numbers is:', average);
+
+
+// Practice 
+
+
+function oddArray(numbers){
+    const odd = [];
+
+    for(const number of numbers){
+        if(number % 2 !== 0){
+            odd.push(number)
+        }
+    }
+    // console.log(odd)
+
+    let multiplied = [];
+    for(const number of odd){
+       multiplied.push(number * 2);
+    }
+    return multiplied;
+    
+    /* let total = 0;
+    for(const number of odd){
+        total += number * 2;
+    }
+    console.log('Sum of multiplied Odds:', total)
+    */
+};
+const numberArray = [3, 5, 7, 6, 4, 8, 9];
+const multiply = oddArray(numberArray);
+// console.log('Multiplied by 2:', multiply);
 
