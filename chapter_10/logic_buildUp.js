@@ -258,4 +258,90 @@ function deliveryCharge(kg){
         charge : charge 
     }
 };
-console.log(deliveryCharge(55));
+// console.log(deliveryCharge(55));
+
+
+/* function passingGrade(marks){
+    if(typeof marks !== 'number' || marks < 0){
+        return 'please input a valid non-negative number'
+    } else if(marks >= 80){
+        return 'A Grade.'
+    } else if(marks >= 70){
+        return 'B Grade'
+    } else if(marks >= 60){
+        return 'C Grade'
+    } else if(marks >= 50){
+        return 'D Grade'
+    } else{
+        return 'F Grade'
+    }
+};
+console.log(passingGrade(50))
+*/
+
+// small version
+
+// function passingMarks(marks){
+//     if(typeof marks !== 'number' || marks < 0) return 'input a valid non-negative number';
+//     if(marks >= 80) return 'A Grade';
+//     if(marks >= 70) return 'B Grade';
+//     if(marks >= 60) return 'C Grade';
+//     if(marks >= 50) return 'D Grade';
+//     return 'Fail';
+// };
+// console.log(passingMarks(59))
+
+
+// 2nd Version
+
+/* function passingMarks(marks){
+    if(typeof marks !== 'number' || marks < 0 || marks > 100) return 'input a valid non-negative number';
+    if(marks >= 80 && marks <= 100) return 'A Grade';
+    if(marks >= 70 && marks <=79) return 'B Grade';
+    if(marks >= 60 && marks <= 69) return 'C Grade';
+    if(marks >= 50 && marks <= 59) return 'D Grade';
+    if (marks < 50) return 'Fail'
+};
+console.log(passingMarks(101))
+*/
+
+// Full Version
+
+function studentResult(marks){
+    if(typeof marks !== 'number' || marks < 0 || marks > 100){
+        return {error: 'Please input a valid number between 0 and 100'};
+    }
+
+    let grade, gpa, remarks;
+
+    if(marks >= 80){
+        grade = 'A';
+        gpa = 4.00;
+        remarks = 'Excellent';
+    } else if(marks >= 70){
+        grade = 'B';
+        gpa = 3.50;
+        remarks = 'Very Good';
+    } else if(marks >= 60){
+        grade = 'C';
+        gpa = 3.00;
+        remarks = 'Good';
+    } else if(marks >= 50){
+        grade = 'D';
+        gpa = 2.50;
+        remarks = 'Needs Improvement';
+    } else{
+        grade = 'F';
+        gpa = 0.00;
+        remarks = 'Fail';
+    }
+    
+    return {
+        marks,
+        grade,
+        gpa : gpa.toFixed(2),
+        remarks
+    }
+};
+console.log(studentResult(75))
+
