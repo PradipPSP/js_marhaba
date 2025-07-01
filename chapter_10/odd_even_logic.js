@@ -107,3 +107,16 @@ const numberArray = [3, 5, 7, 6, 4, 8, 9];
 const multiply = oddArray(numberArray);
 // console.log('Multiplied by 2:', multiply);
 
+
+function oddArray2(numbers){
+    const odd = [];
+
+    for(const number of numbers){
+        if(number % 2 === 1){
+            odd.push(number)
+        }
+    }
+    console.log(odd)
+}
+const numArray = [6, 8, 10, 12, 16]
+oddArray2(numArray);
