@@ -78,8 +78,10 @@ const largeNumber = Math.max(...Array);
 // console.log(largeNumber);
 
 
-// ১ থেকে ১০০ পর্যন্ত প্রাইম নাম্বার প্রিন্ট করো।
 
+// যে কোন সংখ্যা প্রাইম কি না চেক করা
+
+/*
 let num = 19;
 let isPrime = true;
 
@@ -95,9 +97,28 @@ if(isPrime){
     } else{
         console.log(num + ' is not prime')
     }
+*/
 
+// ফাংশনের মাধ্যমে যে কোন সংখ্যা প্রাইম কি না চেক করা
 
+function primeNumber(num){
+    if(num < 2) return false;
 
+    for(let i = 2; i <= Math.sqrt(num); i++){
+        if(num % i === 0){
+            return false;
+        }
+    }
+    return true;
+}
+let number = 13;
+if(primeNumber(number)){
+    console.log(number + ' is prime')
+} else{
+    console.log(number + ' is not prime')
+}
+
+// ১ থেকে ১০০ পর্যন্ত প্রাইম নাম্বার প্রিন্ট করো।
 
 for(let num = 2; num <= 100; num++){
     let isPrime = true;
@@ -110,6 +131,6 @@ for(let num = 2; num <= 100; num++){
     }
 
     if(isPrime){
-        // console.log(num);
+        console.log(num);
     }
 }
