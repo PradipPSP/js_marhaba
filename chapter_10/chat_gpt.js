@@ -111,6 +111,7 @@ function primeNumber(num){
     }
     return true;
 }
+
 let number = 13;
 if(primeNumber(number)){
     console.log(number + ' is prime')
@@ -131,6 +132,18 @@ for(let num = 2; num <= 100; num++){
     }
 
     if(isPrime){
-        console.log(num);
+        // console.log(num);
     }
+}
+
+// * দিয়ে নিচের মতো pattern প্রিন্ট করো:
+
+let pattern = '';
+
+for(let i = 1; i <= 10; i++){
+    pattern = '';
+    for(let j = 1; j <= i; j++){
+        pattern += '*';
+    }
+    console.log(pattern);
 }
