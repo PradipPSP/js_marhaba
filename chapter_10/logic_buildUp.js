@@ -220,4 +220,42 @@ function taxReturn(income){
         remaining : afterTax
     }
 };
-console.log(taxReturn(30000));
+// console.log(taxReturn(30000));
+
+
+/* function deliveryCharge(kg){
+    if(typeof kg !== 'number' || kg < 0) return 'Please enter a valid non-negative number';
+
+    if(kg < 10) return '100 tk.';
+    if(kg < 20) return '300 tk.'
+    if(kg < 50) return '1000 tk.';
+    if(kg >= 50) return (kg * 100) + ' tk.'
+};
+console.log(deliveryCharge(55));
+*/
+
+// আমরা অবজেক্টের মাধ্যমে সম্পূর্ণ তথ্য তুলে ধরতে পারি
+
+function deliveryCharge(kg){
+    if(typeof kg !== 'number' || kg < 0){
+        return 'Please enter a valid non-negative number'
+    }
+
+    let charge;
+
+    if(kg < 10){
+        charge = '100 tk.'
+    } else if(kg < 20){
+        charge = '300 tk.'
+    } else if(kg < 50){
+        charge = '1000 tk.'
+    } else{
+        charge = (kg * 100) + ' tk.'
+    }
+
+    return {
+        weight : kg + ' kg.',
+        charge : charge 
+    }
+};
+console.log(deliveryCharge(55));
