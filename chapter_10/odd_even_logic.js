@@ -116,7 +116,8 @@ function oddArray2(numbers){
             odd.push(number)
         }
     }
-    console.log(odd)
+    // console.log(odd)
 }
 const numArray = [6, 8, 10, 12, 16]
 oddArray2(numArray);
+
