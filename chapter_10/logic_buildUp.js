@@ -141,7 +141,7 @@ const isLipYear1 = isLeapYear(2100);
 const isLipYear2 = isLeapYear(2400);
 const isLipYear3 = isLeapYear(2500);
 const isLipYear4 = isLeapYear(2052);
-console.log(isLipYear1, isLipYear2, isLipYear3, isLipYear4);
+// console.log(isLipYear1, isLipYear2, isLipYear3, isLipYear4);
 
 /*
 এই লজিক অনুযায়ী:
@@ -159,3 +159,65 @@ console.log(isLipYear1, isLipYear2, isLipYear3, isLipYear4);
 
     উপরের কোনোটাই যদি না মেলে, তাহলে false রিটার্ন হবে।
 */
+
+
+// Practice 2
+
+/* function taxReturn(income){
+    if(typeof income !== 'number' || income < 0){
+        return 'Please enter a valid non-negative number'
+    } else if(income <= 50000){
+        return (income * 10) / 100;
+    } else if(income >= 50001 && income <= 100000){
+        return (income * 20) / 100;
+    } else if(income >= 100001 && income <= 200000){
+        return (income * 30) / 100;
+    } else if(income >= 200001){
+        return (income * 40) / 100;
+    } else{
+        return 'Invalid Number'
+    }
+};
+console.log(taxReturn(250000));
+*/
+/*
+function taxReturn(income){
+    if(typeof income !== 'number' || income < 0)      return 'Please enter a valid non-negative number'
+    if(income <= 50000) return income * 0.10;
+    if(income <= 100000) return income * 0.20;
+    if(income <= 200000) return income * 0.30;
+    return income * 0.40;
+};
+console.log(taxReturn(35000));
+*/
+
+
+// আমরা অবজেক্টের মাধ্যমে সম্পূর্ণ তথ্য তুলে ধরতে পারি
+
+function taxReturn(income){
+    if(typeof income !== 'number' || income < 0){
+        return 'Please enter a valid non-negative number'
+    }
+
+    let rate;
+    if(income <= 50000){
+        rate = 0.10;
+    } else if(income <= 100000){
+        rate = 0.20;
+    } else if(income <=200000){
+        rate = 0.30;
+    } else{
+        rate = 0.40;
+    }
+
+    const taxAmount = income * rate;
+    const afterTax = income - taxAmount;
+
+    return{
+        income: income,
+        taxRate : (rate * 100) + '%',
+        taxAmount : taxAmount,
+        remaining : afterTax
+    }
+};
+console.log(taxReturn(30000));
