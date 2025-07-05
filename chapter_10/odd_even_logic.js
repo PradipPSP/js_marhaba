@@ -80,6 +80,28 @@ const average = evenNumAverage(numberArr);
 // Practice 
 
 
+function evenNumber (numbers){
+    const even = [];
+
+    for(const number of numbers){
+        if(number % 2 === 0){
+            even.push(number);
+        }
+    }
+    console.log(even);
+
+    let evenAverage = 0;
+    for(const number of even){
+        evenAverage += number
+    }
+    console.log('Average of Even Numbers:', evenAverage / even.length);
+    
+    // return evenAverage / even.length;
+};
+const numberList = [2, 4, 6, 8, 10];   
+evenNumber(numberList);
+
+
 function oddArray(numbers){
     const odd = [];
 
