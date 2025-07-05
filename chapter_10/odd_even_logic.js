@@ -79,7 +79,6 @@ const average = evenNumAverage(numberArr);
 
 // Practice 
 
-
 function evenNumber (numbers){
     const even = [];
 
@@ -88,14 +87,14 @@ function evenNumber (numbers){
             even.push(number);
         }
     }
-    console.log(even);
+    // console.log(even);
 
     let evenAverage = 0;
     for(const number of even){
         evenAverage += number
     }
-    console.log('Average of Even Numbers:', evenAverage / even.length);
-    
+    // console.log('Average of Even Numbers:', evenAverage / even.length);
+
     // return evenAverage / even.length;
 };
 const numberList = [2, 4, 6, 8, 10];   
@@ -131,15 +130,54 @@ const multiply = oddArray(numberArray);
 
 
 function oddArray2(numbers){
-    const odd = [];
-
-    for(const number of numbers){
+  for(const number of numbers){
         if(number % 2 === 1){
-            odd.push(number)
-        }
+            return 'Odd Number Found: '
+        } 
     }
-    // console.log(odd)
+     return 'No Odd Number Found';
 }
-const numArray = [6, 8, 10, 12, 16]
-oddArray2(numArray);
+const numArray = [6, 8, 10, 12];
+console.log(oddArray2(numArray));
 
+
+/*
+function checkForOdd(arr) {
+  if (!Array.isArray(arr) || arr.length === 0) {
+    return 'Invalid or empty array';
+  }
+
+  // .some() stops as soon as it meets the first odd number
+  const hasOdd = arr.some(n => n % 2 !== 0);
+
+  return hasOdd ? 'Odd number found' : 'No odd number found';
+}
+
+// ➤ Examples
+console.log(checkForOdd([2, 4, 6]));          // No odd number found
+console.log(checkForOdd([2, 3, 4, 6]));       // Odd number found
+console.log(checkForOdd([7, 11, 13]));        // Odd number found
+
+কী হচ্ছে এখানে (সংক্ষেপে বাংলা ব্যাখ্যা)
+
+    **ইনপুট যাচাই **—‌প্রথমেই দেখি এটা আসলেই অ্যারে কিনা এবং ফাঁকা কিনা।
+
+    .some() মেথড—‌অ্যারের প্রতিটি উপাদান খুঁজে দেখে প্রথম যেটা (n % 2 !== 0) সত্য করে, তখনই true রিটার্ন করে, ফলে পুরো অ্যারে ঘুরতে হয় না।
+
+    টের্নারি অপারেটর— hasOdd ভিত্তিতে মেসেজ ঠিক করে দেয়।
+
+লুপ দিয়ে করতে চাইলে
+
+function checkForOddLoop(arr) {
+  if (!Array.isArray(arr) || arr.length === 0) {
+    return 'Invalid or empty array';
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      return 'Odd number found';
+    }
+  }
+  return 'No odd number found';
+}
+*/
