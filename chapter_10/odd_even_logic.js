@@ -138,7 +138,7 @@ function oddArray2(numbers){
      return 'No Odd Number Found';
 }
 const numArray = [6, 8, 10, 12];
-console.log(oddArray2(numArray));
+// console.log(oddArray2(numArray));
 
 
 /*
@@ -181,3 +181,18 @@ function checkForOddLoop(arr) {
   return 'No odd number found';
 }
 */
+
+function averageOfOddNumbers(numbers) {
+    const oddNumbers = numbers.filter(num => num % 2 === 1);
+
+    if (oddNumbers.length === 0) return 0;
+
+    const sum = oddNumbers.reduce((acc, val) => acc + val, 0);
+    const average = sum / oddNumbers.length;
+
+    return parseFloat(average.toFixed(2));
+}
+
+const numList = [1, 2, 3, 4, 5, 6, 7, 9, 9];
+console.log("Odd Average (2 decimal):", averageOfOddNumbers(numList));
+
