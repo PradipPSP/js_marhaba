@@ -194,5 +194,19 @@ function averageOfOddNumbers(numbers) {
 }
 
 const numList = [1, 2, 3, 4, 5, 6, 7, 9, 9];
-console.log("Odd Average (2 decimal):", averageOfOddNumbers(numList));
+// console.log("Odd Average (2 decimal):", averageOfOddNumbers(numList));
+
+
+function subtractOneFromOdds(numbers) {
+    const result = numbers
+        .filter(num => num % 2 === 1)  // শুধু বিজোড় সংখ্যা রাখো
+        .map(num => num - 1);          // প্রতিটি থেকে ১ বিয়োগ করো
+
+    return result;
+}
+
+const numList2 = [1, 2, 3, 4, 5, 6, 7];
+console.log('New Array:', subtractOneFromOdds(numList2));
+
+
 
