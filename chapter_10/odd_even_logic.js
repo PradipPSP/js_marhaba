@@ -208,5 +208,17 @@ function subtractOneFromOdds(numbers) {
 const numList2 = [1, 2, 3, 4, 5, 6, 7];
 console.log('New Array:', subtractOneFromOdds(numList2));
 
+// No Duplicates
+
+const studentsNames = ['John', 'Jane', 'John', 'Doe', 'Jane'];
+const numbersArray = [1, 2, 3, 1, 2, 4, 5];
+
+function removeDuplicates(arr) {
+    let uniqueArray = [];
+    for (const item of arr) {
+        if(uniqueArray.includes(item) === false){
+            uniqueArray.push(item);
+        }
+}
 
 
